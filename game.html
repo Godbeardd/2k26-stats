@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2k26 Rec Stats — Game View</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Keep JS happy (elements exist), but hide season-only UI on the game page */
+      .hidden {
+        display: none !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="wrap">
+      <div>
+        <h1>2k26 Rec Stats</h1>
+        <p id="subtitle">Loading…</p>
+      </div>
+
+      <div class="controls">
+        <label>
+          Select Game
+          <select id="gameSelect"></select>
+        </label>
+
+        <!-- Metric/Leaderboard exists for app.js but is hidden on game page -->
+        <label class="hidden">
+          Leaderboard
+          <select id="metricSelect">
+            <option value="pts">PTS</option>
+            <option value="reb">REB</option>
+            <option value="ast">AST</option>
+            <option value="stl">STL</option>
+            <option value="blk">BLK</option>
+            <option value="fgp">FG%</option>
+            <option value="tpp">3P%</option>
+          </select>
+        </label>
+      </div>
+    </header>
+
+    <main class="wrap grid">
+      <!-- Season-only sections stay in DOM but hidden -->
+      <section class="card hidden">
+        <h2>Team Summary</h2>
+        <div class="kpis">
+          <div class="kpi">
+            <div class="k">Record</div>
+            <div class="v" id="record">—</div>
+          </div>
+          <div class="kpi">
+            <div class="k">Games</div>
+            <div class="v" id="gamesCount">—</div>
+          </div>
+          <div class="kpi">
+            <div class="k">Avg PF</div>
+            <div class="v" id="avgFor">—</div>
+          </div>
+          <div class="kpi">
+            <div class="k">Avg PA</div>
+            <div class="v" id="avgAgainst">—</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card hidden">
+        <h2>Leaderboard</h2>
+        <div class="kpis">
+          <div class="kpi">
+            <div class="k">Leader</div>
+            <div class="v" id="lbLeader">—</div>
+          </div>
+          <div class="kpi">
+            <div class="k">Value</div>
+            <div class="v" id="lbValue">—</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card full hidden">
+        <h2>Season Stats</h2>
+        <div class="tableWrap">
+          <table id="totalsTable"></table>
+        </div>
+      </section>
+
+      <!-- Game sections visible -->
+      <section class="card full">
+        <h2>Game Breakdown</h2>
+        <div class="sub" id="gameMeta">—</div>
+        <div class="tableWrap">
+          <table id="boxTable"></table>
+        </div>
+      </section>
+
+      <section class="card full">
+        <h2>Game Log</h2>
+        <div class="tableWrap">
+          <table id="logTable"></table>
+        </div>
+      </section>
+    </main>
+
+    <footer class="wrap foot" style="display:flex; justify-content:space-between; gap:12px;">
+      <a href="index.html">← Back to Season Stats</a>
+      <span>2kstats.gavinsmedia.com</span>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
