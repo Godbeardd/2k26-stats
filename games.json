@@ -39,6 +39,30 @@
         "Kevin":  { "pts": 17, "reb": 2,  "ast": 6,  "stl": 1, "blk": 0, "fgm": 8,  "fga": 14, "tpm": 1, "tpa": 4  },
         "Jake":   { "pts": 2,  "reb": 18, "ast": 12, "stl": 1, "blk": 1, "fgm": 1,  "fga": 2,  "tpm": 0, "tpa": 0  }
       }
-    }
-  ]
+    },
+    {
+  "date": "2025-12-26",
+  "opponent": "Rec Game",
+  "result": "L",
+  "score": {
+    "us": 65,
+    "them": 88
+  },
+  "player": {
+    "name": "GodBeard",
+    "pts": 35,
+    "reb": 0,
+    "ast": 0,
+    "stl": 0,
+    "blk": 0,
+    "to": 0,
+    "fouls": 2,
+    "fgm": 12,
+    "fga": 16,
+    "tpm": 11,
+    "tpa": 14,
+    "ftm": 0,
+    "fta": 0,
+    "grade": "A-"
+  }
 }
