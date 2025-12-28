@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>2K26 Squad Stats</title>
+    <title>2k26 Stats</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
     <header class="wrap">
       <div>
-        <h1>2K26 Squad Stats</h1>
+        <h1>2k26 Stats</h1>
         <p id="subtitle">Loading…</p>
       </div>
 
@@ -39,30 +39,48 @@
       <section class="card">
         <h2>Team Summary</h2>
         <div class="kpis">
-          <div class="kpi"><div class="k">Record</div><div class="v" id="record">—</div></div>
-          <div class="kpi"><div class="k">Games</div><div class="v" id="gamesCount">—</div></div>
-          <div class="kpi"><div class="k">Avg PF</div><div class="v" id="avgFor">—</div></div>
-          <div class="kpi"><div class="k">Avg PA</div><div class="v" id="avgAgainst">—</div></div>
+          <div class="kpi">
+            <div class="k">Record</div>
+            <div class="v" id="record">—</div>
+          </div>
+          <div class="kpi">
+            <div class="k">Games</div>
+            <div class="v" id="gamesCount">—</div>
+          </div>
+          <div class="kpi">
+            <div class="k">Avg PF</div>
+            <div class="v" id="avgFor">—</div>
+          </div>
+          <div class="kpi">
+            <div class="k">Avg PA</div>
+            <div class="v" id="avgAgainst">—</div>
+          </div>
         </div>
       </section>
 
       <section class="card">
         <h2>Leaderboard</h2>
         <div class="kpis">
-          <div class="kpi"><div class="k">Leader</div><div class="v" id="lbLeader">—</div></div>
-          <div class="kpi"><div class="k">Value</div><div class="v" id="lbValue">—</div></div>
+          <div class="kpi">
+            <div class="k">Leader</div>
+            <div class="v" id="lbLeader">—</div>
+          </div>
+          <div class="kpi">
+            <div class="k">Value</div>
+            <div class="v" id="lbValue">—</div>
+          </div>
         </div>
       </section>
 
       <section class="card full">
-        <h2>Totals & Averages</h2>
+        <h2>Season Stats</h2>
         <div class="tableWrap">
           <table id="totalsTable"></table>
         </div>
       </section>
 
       <section class="card full">
-        <h2>Selected Game Box Score</h2>
+        <h2>Game Breakdown</h2>
         <div class="sub" id="gameMeta">—</div>
         <div class="tableWrap">
           <table id="boxTable"></table>
