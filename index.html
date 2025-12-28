@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>2k26 Rec Stats</title>
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Keep JS happy (elements exist), but hide game-only UI on the season page */
+      .hidden {
+        display: none !important;
+      }
+    </style>
   </head>
 
   <body>
@@ -15,11 +21,13 @@
       </div>
 
       <div class="controls">
-        <label>
+        <!-- Game selector exists for app.js, but is hidden on the season page -->
+        <label class="hidden">
           Select Game
           <select id="gameSelect"></select>
         </label>
 
+        <!-- Leaderboard stays on season page -->
         <label>
           Leaderboard
           <select id="metricSelect">
@@ -79,7 +87,8 @@
         </div>
       </section>
 
-      <section class="card full">
+      <!-- Game-only sections stay in the DOM but are hidden -->
+      <section class="card full hidden">
         <h2>Game Breakdown</h2>
         <div class="sub" id="gameMeta">—</div>
         <div class="tableWrap">
@@ -87,7 +96,7 @@
         </div>
       </section>
 
-      <section class="card full">
+      <section class="card full hidden">
         <h2>Game Log</h2>
         <div class="tableWrap">
           <table id="logTable"></table>
@@ -95,8 +104,9 @@
       </section>
     </main>
 
-    <footer class="wrap foot">
+    <footer class="wrap foot" style="display:flex; justify-content:space-between; gap:12px;">
       <span>2kstats.gavinsmedia.com</span>
+      <a href="game.html">View Individual Game Stats →</a>
     </footer>
 
     <script src="app.js"></script>
