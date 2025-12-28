@@ -92,6 +92,13 @@ function wlFrom(game) {
   return diff > 0 ? "W" : diff < 0 ? "L" : "T";
 }
 
+function formatGameLabel(g) {
+  const d = new Date(g.date + "T00:00:00");
+  const dateLabel = d.toLocaleDateString("en-US", { month: "short", day: "numeric" });
+  const wl = wlFrom(g);
+  return `${dateLabel} • ${wl} ${g.for}-${g.against}`;
+}
+
 async function main() {
   const res = await fetch("./games.json", { cache: "no-store" });
   const data = await res.json();
@@ -123,7 +130,7 @@ async function main() {
   games.forEach((g) => {
     const opt = document.createElement("option");
     opt.value = g.id;
-    opt.textContent = `Game ${g.id}`;
+    opt.textContent = formatGameLabel(g);
     gameSelect.appendChild(opt);
   });
 
@@ -153,7 +160,7 @@ async function main() {
     totalsRows
   );
 
-  // Game log table
+  // Game log
   const logRows = games.map((g) => {
     const diff = g.for - g.against;
     return [g.id, g.date, `${g.for}-${g.against}`, diff, wlFrom(g)];
@@ -165,26 +172,25 @@ async function main() {
     logRows
   );
 
-  // Leaderboard update
+  // Leaderboard
   function updateLeaderboard() {
     const metric = metricSelect.value;
     const [name, value] = leaderboard(totals, metric);
-
     document.getElementById("lbLeader").textContent = name ?? "—";
-
-    const isPct = metric === "fgp" || metric === "tpp";
     document.getElementById("lbValue").textContent =
-      isPct ? fmtPct(value) : (Number.isFinite(value) ? String(value) : "—");
+      metric === "fgp" || metric === "tpp"
+        ? fmtPct(value)
+        : (Number.isFinite(value) ? String(value) : "—");
   }
 
-  // Box score update
+  // Box score
   function updateBox() {
     const id = Number(gameSelect.value);
     const g = games.find((x) => x.id === id);
     if (!g) return;
 
     document.getElementById("gameMeta").textContent =
-      `${g.date} • ${g.for}-${g.against} • ${wlFrom(g)}`;
+      `${formatGameLabel(g)}`;
 
     const boxRows = players.map((p) => {
       const s = g.players[p];
@@ -207,7 +213,6 @@ async function main() {
       ];
     });
 
-    // Sort by points desc
     boxRows.sort((a, b) => (b[1] ?? 0) - (a[1] ?? 0));
 
     renderTable(
@@ -224,8 +229,8 @@ async function main() {
   updateBox();
 }
 
-main().catch((err) => {
-  console.error(err);
+main().catch(() => {
   const sub = document.getElementById("subtitle");
   if (sub) sub.textContent = "Failed to load games.json";
 });
+
