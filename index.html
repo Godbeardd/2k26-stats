@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2K26 Squad Stats</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="wrap">
+      <div>
+        <h1>2K26 Squad Stats</h1>
+        <p id="subtitle">Loading…</p>
+      </div>
+
+      <div class="controls">
+        <label>
+          Select Game
+          <select id="gameSelect"></select>
+        </label>
+
+        <label>
+          Leaderboard
+          <select id="metricSelect">
+            <option value="pts">PTS</option>
+            <option value="reb">REB</option>
+            <option value="ast">AST</option>
+            <option value="stl">STL</option>
+            <option value="blk">BLK</option>
+            <option value="fgp">FG%</option>
+            <option value="tpp">3P%</option>
+          </select>
+        </label>
+      </div>
+    </header>
+
+    <main class="wrap grid">
+      <section class="card">
+        <h2>Team Summary</h2>
+        <div class="kpis">
+          <div class="kpi"><div class="k">Record</div><div class="v" id="record">—</div></div>
+          <div class="kpi"><div class="k">Games</div><div class="v" id="gamesCount">—</div></div>
+          <div class="kpi"><div class="k">Avg PF</div><div class="v" id="avgFor">—</div></div>
+          <div class="kpi"><div class="k">Avg PA</div><div class="v" id="avgAgainst">—</div></div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Leaderboard</h2>
+        <div class="kpis">
+          <div class="kpi"><div class="k">Leader</div><div class="v" id="lbLeader">—</div></div>
+          <div class="kpi"><div class="k">Value</div><div class="v" id="lbValue">—</div></div>
+        </div>
+      </section>
+
+      <section class="card full">
+        <h2>Totals & Averages</h2>
+        <div class="tableWrap">
+          <table id="totalsTable"></table>
+        </div>
+      </section>
+
+      <section class="card full">
+        <h2>Selected Game Box Score</h2>
+        <div class="sub" id="gameMeta">—</div>
+        <div class="tableWrap">
+          <table id="boxTable"></table>
+        </div>
+      </section>
+
+      <section class="card full">
+        <h2>Game Log</h2>
+        <div class="tableWrap">
+          <table id="logTable"></table>
+        </div>
+      </section>
+    </main>
+
+    <footer class="wrap foot">
+      <span>2kstats.gavinsmedia.com</span>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
