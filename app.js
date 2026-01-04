@@ -1,7 +1,13 @@
-// app.js (overview page only)
+// app.js (overview page)
 const fmtPct = (n) => (Number.isFinite(n) ? (n * 100).toFixed(1) + "%" : "—");
 const fmt1 = (n) => (Number.isFinite(n) ? n.toFixed(1) : "—");
 const safeDiv = (a, b) => (b === 0 ? 0 : a / b);
+
+function cell(value) {
+  // allow HTML cell objects: { html: "<a>...</a>" }
+  if (value && typeof value === "object" && "html" in value) return value;
+  return { text: String(value) };
+}
 
 function renderTable(el, headers, rows) {
   el.innerHTML = "";
@@ -19,9 +25,11 @@ function renderTable(el, headers, rows) {
   const tbody = document.createElement("tbody");
   rows.forEach((r) => {
     const tr = document.createElement("tr");
-    r.forEach((cell) => {
+    r.forEach((raw) => {
       const td = document.createElement("td");
-      td.textContent = cell;
+      const c = cell(raw);
+      if ("html" in c) td.innerHTML = c.html;
+      else td.textContent = c.text;
       tr.appendChild(td);
     });
     tbody.appendChild(tr);
@@ -32,18 +40,7 @@ function renderTable(el, headers, rows) {
 function calcTotals(players, games) {
   const totals = {};
   players.forEach((p) => {
-    totals[p] = {
-      g: 0,
-      pts: 0,
-      reb: 0,
-      ast: 0,
-      stl: 0,
-      blk: 0,
-      fgm: 0,
-      fga: 0,
-      tpm: 0,
-      tpa: 0,
-    };
+    totals[p] = { g: 0, pts: 0, reb: 0, ast: 0, stl: 0, blk: 0, fgm: 0, fga: 0, tpm: 0, tpa: 0 };
   });
 
   games.forEach((game) => {
@@ -89,6 +86,7 @@ function leaderboard(totals, metric) {
   return entries[0];
 }
 
+/* Trends */
 function buildTrendSeries(players, games, metric) {
   const series = Object.fromEntries(players.map((p) => [p, []]));
 
@@ -118,7 +116,6 @@ function sizeCanvasToContainer(canvas) {
 
   const pxW = Math.max(300, Math.floor(cssW * dpr));
   const pxH = Math.max(200, Math.floor(cssH * dpr));
-
   if (canvas.width !== pxW) canvas.width = pxW;
   if (canvas.height !== pxH) canvas.height = pxH;
 }
@@ -127,7 +124,6 @@ function drawTrendChart(canvas, selectedPlayers, metric, trendData) {
   const ctx = canvas.getContext("2d");
   const W = canvas.width;
   const H = canvas.height;
-
   ctx.clearRect(0, 0, W, H);
 
   if (!selectedPlayers.length) {
@@ -160,7 +156,6 @@ function drawTrendChart(canvas, selectedPlayers, metric, trendData) {
 
   let yMin = Math.min(...ys);
   let yMax = Math.max(...ys);
-
   const yPad = (yMax - yMin) * 0.1 || 1;
   yMin -= yPad;
   yMax += yPad;
@@ -182,8 +177,7 @@ function drawTrendChart(canvas, selectedPlayers, metric, trendData) {
     ctx.stroke();
 
     ctx.fillStyle = "rgba(255,255,255,0.65)";
-    const label =
-      metric === "fgp" || metric === "tpp" ? `${Math.round(y)}%` : `${Math.round(y)}`;
+    const label = (metric === "fgp" || metric === "tpp") ? `${Math.round(y)}%` : `${Math.round(y)}`;
     ctx.fillText(label, 10, py + 4);
   }
 
@@ -191,7 +185,6 @@ function drawTrendChart(canvas, selectedPlayers, metric, trendData) {
   for (let i = 1; i <= xTicks; i++) {
     const x = Math.round(1 + (i - 1) * (xMax - 1) / (xTicks - 1 || 1));
     const px = xToPx(x);
-
     ctx.beginPath();
     ctx.moveTo(px, pad.t);
     ctx.lineTo(px, H - pad.b);
@@ -227,23 +220,6 @@ function drawTrendChart(canvas, selectedPlayers, metric, trendData) {
       ctx.fill();
     });
   });
-
-  ctx.font = "13px system-ui";
-  let lx = pad.l;
-  let ly = 18;
-  selectedPlayers.forEach((player, idx) => {
-    const hue = Math.floor((idx / Math.max(1, selectedPlayers.length)) * 300);
-    ctx.fillStyle = `hsla(${hue}, 85%, 65%, 0.95)`;
-    ctx.fillRect(lx, ly - 10, 12, 12);
-    ctx.fillStyle = "rgba(255,255,255,0.85)";
-    ctx.fillText(player, lx + 18, ly);
-
-    lx += 18 + player.length * 8 + 18;
-    if (lx > W - 180) {
-      lx = pad.l;
-      ly += 18;
-    }
-  });
 }
 
 function getSelectedOptions(selectEl) {
@@ -252,6 +228,7 @@ function getSelectedOptions(selectEl) {
 
 async function main() {
   const res = await fetch("./games.json", { cache: "no-store" });
+  if (!res.ok) throw new Error("games.json not found / blocked");
   const data = await res.json();
 
   const players = data.players;
@@ -268,7 +245,6 @@ async function main() {
 
   const avgFor = games.reduce((s, g) => s + g.for, 0) / (games.length || 1);
   const avgAgainst = games.reduce((s, g) => s + g.against, 0) / (games.length || 1);
-
   document.getElementById("avgFor").textContent = fmt1(avgFor);
   document.getElementById("avgAgainst").textContent = fmt1(avgAgainst);
 
@@ -280,7 +256,7 @@ async function main() {
     const tpp = t.tpa ? t.tpm / t.tpa : NaN;
 
     return [
-      p,
+      { html: `<a class="plink" href="player.html?name=${encodeURIComponent(p)}">${p}</a>` },
       t.g,
       t.pts, fmt1(t.pts / (t.g || 1)),
       t.reb, fmt1(t.reb / (t.g || 1)),
@@ -298,14 +274,13 @@ async function main() {
     totalsRows
   );
 
-  // leaderboard leader
   const metricSelect = document.getElementById("metricSelect");
   function updateLeaderboard() {
     const metric = metricSelect.value;
     const [name, value] = leaderboard(totals, metric);
     document.getElementById("lbLeader").textContent = name ?? "—";
     document.getElementById("lbValue").textContent =
-      metric === "fgp" || metric === "tpp" ? fmtPct(value) : (Number.isFinite(value) ? String(value) : "—");
+      (metric === "fgp" || metric === "tpp") ? fmtPct(value) : (Number.isFinite(value) ? String(value) : "—");
   }
   metricSelect.addEventListener("change", updateLeaderboard);
   updateLeaderboard();
@@ -342,5 +317,6 @@ async function main() {
 
 main().catch(() => {
   const sub = document.getElementById("subtitle");
-  if (sub) sub.textContent = "Failed to load games.json";
+  if (sub) sub.textContent = "Failed to load games.json (serve the folder via http://localhost)";
 });
+
