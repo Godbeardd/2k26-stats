@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2k26 Rec Stats • Player</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="wrap">
+      <div>
+        <h1 id="playerTitle">Player</h1>
+        <p id="subtitle">Loading…</p>
+      </div>
+
+      <div class="controls">
+        <a class="link" href="index.html">← Back to overview</a>
+        <a class="link" href="games.html">View games →</a>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <div class="grid">
+        <section class="card full">
+          <h2>Player Summary</h2>
+          <div class="sub" id="playerSub">—</div>
+
+          <div class="kpis">
+            <div class="kpi">
+              <div class="k">Games</div>
+              <div class="v" id="pG">—</div>
+            </div>
+            <div class="kpi">
+              <div class="k">PPG</div>
+              <div class="v" id="pPPG">—</div>
+            </div>
+            <div class="kpi">
+              <div class="k">APG</div>
+              <div class="v" id="pAPG">—</div>
+            </div>
+            <div class="kpi">
+              <div class="k">RPG</div>
+              <div class="v" id="pRPG">—</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="card full">
+          <h2>Game-by-Game</h2>
+          <div class="sub">Click a game number to open that game</div>
+          <div class="tableWrap">
+            <table id="playerGamesTable"></table>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="player.js"></script>
+  </body>
+</html>
