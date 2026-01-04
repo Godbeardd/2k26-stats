@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2k26 Rec Stats • Games</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="wrap">
+      <div>
+        <h1>2k26 Rec Stats</h1>
+        <p id="subtitle">Games</p>
+      </div>
+
+      <div class="controls">
+        <a class="link" href="index.html">← Back to overview</a>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <div class="grid">
+        <!-- Game list -->
+        <section class="card">
+          <h2>Game List</h2>
+          <div class="sub">Click a game to load its stats</div>
+          <div class="tableWrap" style="min-height: 380px;">
+            <table id="gamesListTable"></table>
+          </div>
+        </section>
+
+        <!-- Box score -->
+        <section class="card">
+          <h2 id="gameTitle">Box Score</h2>
+          <div class="sub" id="gameMeta">Select a game</div>
+          <div class="tableWrap">
+            <table id="boxTable"></table>
+          </div>
+        </section>
+
+        <!-- Optional: team totals for that game (not redundant, just useful) -->
+        <section class="card full">
+          <h2>Team Totals</h2>
+          <div class="sub">Quick snapshot of the selected game</div>
+
+          <div class="kpis" style="grid-template-columns: repeat(4, 1fr);">
+            <div class="kpi">
+              <div class="k">Score</div>
+              <div class="v" id="gScore">—</div>
+            </div>
+            <div class="kpi">
+              <div class="k">Diff</div>
+              <div class="v" id="gDiff">—</div>
+            </div>
+            <div class="kpi">
+              <div class="k">Team FG</div>
+              <div class="v" id="gFG">—</div>
+            </div>
+            <div class="kpi">
+              <div class="k">Team 3PT</div>
+              <div class="v" id="g3PT">—</div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="games.js"></script>
+  </body>
+</html>
