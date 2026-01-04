@@ -1,6 +1,7 @@
-// app.js
+// app.js (overview page only)
 const fmtPct = (n) => (Number.isFinite(n) ? (n * 100).toFixed(1) + "%" : "—");
 const fmt1 = (n) => (Number.isFinite(n) ? n.toFixed(1) : "—");
+const safeDiv = (a, b) => (b === 0 ? 0 : a / b);
 
 function renderTable(el, headers, rows) {
   el.innerHTML = "";
@@ -88,24 +89,6 @@ function leaderboard(totals, metric) {
   return entries[0];
 }
 
-function wlFrom(game) {
-  const diff = game.for - game.against;
-  return diff > 0 ? "W" : diff < 0 ? "L" : "T";
-}
-
-function formatGameLabel(g) {
-  const d = new Date(g.date + "T00:00:00");
-  const dateLabel = d.toLocaleDateString("en-US", { month: "short", day: "numeric" });
-  const wl = wlFrom(g);
-  return `${dateLabel} • ${wl} ${g.for}-${g.against}`;
-}
-
-/* ---------------------------
-   Trends (Canvas)
---------------------------- */
-
-const safeDiv = (a, b) => (b === 0 ? 0 : a / b);
-
 function buildTrendSeries(players, games, metric) {
   const series = Object.fromEntries(players.map((p) => [p, []]));
 
@@ -130,8 +113,7 @@ function buildTrendSeries(players, games, metric) {
 function sizeCanvasToContainer(canvas) {
   const dpr = window.devicePixelRatio || 1;
   const cssW = canvas.clientWidth || canvas.width;
-  const cssH = Math.round(cssW * (420 / 1200)); // keep same aspect as default
-
+  const cssH = Math.round(cssW * (420 / 1200));
   canvas.style.height = cssH + "px";
 
   const pxW = Math.max(300, Math.floor(cssW * dpr));
@@ -155,7 +137,6 @@ function drawTrendChart(canvas, selectedPlayers, metric, trendData) {
     return;
   }
 
-  // collect visible points
   let points = [];
   for (const p of selectedPlayers) points = points.concat(trendData.series[p] || []);
   points = points.filter((pt) => Number.isFinite(pt.y));
@@ -187,7 +168,6 @@ function drawTrendChart(canvas, selectedPlayers, metric, trendData) {
   const xToPx = (x) => pad.l + safeDiv((x - xMin), (xMax - xMin || 1)) * plotW;
   const yToPx = (y) => pad.t + (1 - safeDiv((y - yMin), (yMax - yMin || 1))) * plotH;
 
-  // grid
   ctx.strokeStyle = "rgba(255,255,255,0.08)";
   ctx.lineWidth = 1;
 
@@ -207,7 +187,6 @@ function drawTrendChart(canvas, selectedPlayers, metric, trendData) {
     ctx.fillText(label, 10, py + 4);
   }
 
-  // x ticks
   const xTicks = Math.min(10, xMax);
   for (let i = 1; i <= xTicks; i++) {
     const x = Math.round(1 + (i - 1) * (xMax - 1) / (xTicks - 1 || 1));
@@ -222,7 +201,6 @@ function drawTrendChart(canvas, selectedPlayers, metric, trendData) {
     ctx.fillText(`G${x}`, px - 10, H - 16);
   }
 
-  // series lines
   selectedPlayers.forEach((player, idx) => {
     const pts = (trendData.series[player] || []).filter((pt) => Number.isFinite(pt.y));
     if (!pts.length) return;
@@ -250,7 +228,6 @@ function drawTrendChart(canvas, selectedPlayers, metric, trendData) {
     });
   });
 
-  // legend
   ctx.font = "13px system-ui";
   let lx = pad.l;
   let ly = 18;
@@ -273,10 +250,6 @@ function getSelectedOptions(selectEl) {
   return Array.from(selectEl.selectedOptions).map((o) => o.value);
 }
 
-/* ---------------------------
-   Main
---------------------------- */
-
 async function main() {
   const res = await fetch("./games.json", { cache: "no-store" });
   const data = await res.json();
@@ -284,7 +257,6 @@ async function main() {
   const players = data.players;
   const games = (data.games || []).slice().sort((a, b) => a.id - b.id);
 
-  // Summary
   const wins = games.filter((g) => g.for > g.against).length;
   const losses = games.length - wins;
 
@@ -300,20 +272,8 @@ async function main() {
   document.getElementById("avgFor").textContent = fmt1(avgFor);
   document.getElementById("avgAgainst").textContent = fmt1(avgAgainst);
 
-  // Dropdowns
-  const gameSelect = document.getElementById("gameSelect");
-  const metricSelect = document.getElementById("metricSelect");
-
-  gameSelect.innerHTML = "";
-  games.forEach((g) => {
-    const opt = document.createElement("option");
-    opt.value = g.id;
-    opt.textContent = formatGameLabel(g);
-    gameSelect.appendChild(opt);
-  });
-
-  // Totals table
   const totals = calcTotals(players, games);
+
   const totalsRows = players.map((p) => {
     const t = totals[p];
     const fgp = t.fga ? t.fgm / t.fga : NaN;
@@ -338,105 +298,44 @@ async function main() {
     totalsRows
   );
 
-  // Game log
-  const logRows = games.map((g) => {
-    const diff = g.for - g.against;
-    return [g.id, g.date, `${g.for}-${g.against}`, diff, wlFrom(g)];
-  });
-
-  renderTable(
-    document.getElementById("logTable"),
-    ["Game #", "Date", "Score", "Diff", "W/L"],
-    logRows
-  );
-
-  // Leaderboard
+  // leaderboard leader
+  const metricSelect = document.getElementById("metricSelect");
   function updateLeaderboard() {
     const metric = metricSelect.value;
     const [name, value] = leaderboard(totals, metric);
     document.getElementById("lbLeader").textContent = name ?? "—";
     document.getElementById("lbValue").textContent =
-      metric === "fgp" || metric === "tpp"
-        ? fmtPct(value)
-        : (Number.isFinite(value) ? String(value) : "—");
+      metric === "fgp" || metric === "tpp" ? fmtPct(value) : (Number.isFinite(value) ? String(value) : "—");
   }
-
-  // Box score
-  function updateBox() {
-    const id = Number(gameSelect.value);
-    const g = games.find((x) => x.id === id);
-    if (!g) return;
-
-    document.getElementById("gameMeta").textContent = `${formatGameLabel(g)}`;
-
-    const boxRows = players.map((p) => {
-      const s = g.players?.[p];
-      if (!s) return [p, "—", "—", "—", "—", "—", "—", "—", "—", "—"];
-
-      const fgp = s.fga ? s.fgm / s.fga : NaN;
-      const tpp = s.tpa ? s.tpm / s.tpa : NaN;
-
-      return [
-        p,
-        s.pts,
-        s.reb,
-        s.ast,
-        s.stl,
-        s.blk,
-        `${s.fgm}-${s.fga}`,
-        fmtPct(fgp),
-        `${s.tpm}-${s.tpa}`,
-        fmtPct(tpp),
-      ];
-    });
-
-    boxRows.sort((a, b) => (b[1] ?? 0) - (a[1] ?? 0));
-
-    renderTable(
-      document.getElementById("boxTable"),
-      ["Player", "PTS", "REB", "AST", "STL", "BLK", "FG", "FG%", "3PT", "3P%"],
-      boxRows
-    );
-  }
-
   metricSelect.addEventListener("change", updateLeaderboard);
-  gameSelect.addEventListener("change", updateBox);
-
   updateLeaderboard();
-  updateBox();
 
-  /* ---------------------------
-     Trends wiring (only if the section exists)
-  --------------------------- */
+  // trends
   const trendMetricEl = document.getElementById("trendMetric");
   const trendPlayersEl = document.getElementById("trendPlayers");
   const trendCanvas = document.getElementById("trendChart");
 
   if (trendMetricEl && trendPlayersEl && trendCanvas) {
-    // fill player multi-select
     trendPlayersEl.innerHTML = "";
     players.forEach((p) => {
       const opt = document.createElement("option");
       opt.value = p;
       opt.textContent = p;
-      opt.selected = true; // default to all selected
+      opt.selected = true;
       trendPlayersEl.appendChild(opt);
     });
 
     function redrawTrends() {
       sizeCanvasToContainer(trendCanvas);
-
       const metric = trendMetricEl.value;
       const selectedPlayers = getSelectedOptions(trendPlayersEl);
       const trendData = buildTrendSeries(players, games, metric);
-
       drawTrendChart(trendCanvas, selectedPlayers, metric, trendData);
     }
 
     trendMetricEl.addEventListener("change", redrawTrends);
     trendPlayersEl.addEventListener("change", redrawTrends);
     window.addEventListener("resize", redrawTrends);
-
     redrawTrends();
   }
 }
