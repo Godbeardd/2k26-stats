@@ -1,3 +1,4 @@
+<!-- index.html -->
 <!doctype html>
 <html lang="en">
   <head>
@@ -5,12 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>2k26 Rec Stats</title>
     <link rel="stylesheet" href="styles.css" />
-    <style>
-      /* Keep JS happy (elements exist), but hide game-only UI on the season page */
-      .hidden {
-        display: none !important;
-      }
-    </style>
   </head>
 
   <body>
@@ -21,13 +16,11 @@
       </div>
 
       <div class="controls">
-        <!-- Game selector exists for app.js, but is hidden on the season page -->
-        <label class="hidden">
+        <label>
           Select Game
           <select id="gameSelect"></select>
         </label>
 
-        <!-- Leaderboard stays on season page -->
         <label>
           Leaderboard
           <select id="metricSelect">
@@ -43,72 +36,127 @@
       </div>
     </header>
 
-    <main class="wrap grid">
-      <section class="card">
-        <h2>Team Summary</h2>
-        <div class="kpis">
-          <div class="kpi">
-            <div class="k">Record</div>
-            <div class="v" id="record">—</div>
-          </div>
-          <div class="kpi">
-            <div class="k">Games</div>
-            <div class="v" id="gamesCount">—</div>
-          </div>
-          <div class="kpi">
-            <div class="k">Avg PF</div>
-            <div class="v" id="avgFor">—</div>
-          </div>
-          <div class="kpi">
-            <div class="k">Avg PA</div>
-            <div class="v" id="avgAgainst">—</div>
-          </div>
-        </div>
-      </section>
+    <main class="wrap">
+      <div class="grid">
+        <!-- Summary -->
+        <section class="card full">
+          <h2>Season Summary</h2>
+          <div class="sub">Team-level overview (auto from games.json)</div>
 
-      <section class="card">
-        <h2>Leaderboard</h2>
-        <div class="kpis">
-          <div class="kpi">
-            <div class="k">Leader</div>
-            <div class="v" id="lbLeader">—</div>
+          <div class="kpis">
+            <div class="kpi">
+              <div class="k">Record</div>
+              <div class="v" id="record">—</div>
+            </div>
+            <div class="kpi">
+              <div class="k">Games</div>
+              <div class="v" id="gamesCount">—</div>
+            </div>
+            <div class="kpi">
+              <div class="k">Avg Points For</div>
+              <div class="v" id="avgFor">—</div>
+            </div>
+            <div class="kpi">
+              <div class="k">Avg Points Against</div>
+              <div class="v" id="avgAgainst">—</div>
+            </div>
           </div>
-          <div class="kpi">
-            <div class="k">Value</div>
-            <div class="v" id="lbValue">—</div>
+        </section>
+
+        <!-- Leaderboard (single leader) -->
+        <section class="card">
+          <h2>Leaderboard Leader</h2>
+          <div class="sub">Top player for the selected metric</div>
+
+          <div class="kpis" style="grid-template-columns: 1fr 1fr;">
+            <div class="kpi">
+              <div class="k">Leader</div>
+              <div class="v" id="lbLeader">—</div>
+            </div>
+            <div class="kpi">
+              <div class="k">Value</div>
+              <div class="v" id="lbValue">—</div>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="card full">
-        <h2>Season Stats</h2>
-        <div class="tableWrap">
-          <table id="totalsTable"></table>
-        </div>
-      </section>
+        <!-- Game meta -->
+        <section class="card">
+          <h2>Selected Game</h2>
+          <div class="sub" id="gameMeta">—</div>
+          <div class="foot">Use “Select Game” to see the box score below.</div>
+        </section>
 
-      <!-- Game-only sections stay in the DOM but are hidden -->
-      <section class="card full hidden">
-        <h2>Game Breakdown</h2>
-        <div class="sub" id="gameMeta">—</div>
-        <div class="tableWrap">
-          <table id="boxTable"></table>
-        </div>
-      </section>
+        <!-- Totals table -->
+        <section class="card full">
+          <h2>Season Totals + Per Game</h2>
+          <div class="sub">Totals and per-game averages for each player</div>
+          <div class="tableWrap">
+            <table id="totalsTable"></table>
+          </div>
+        </section>
 
-      <section class="card full hidden">
-        <h2>Game Log</h2>
-        <div class="tableWrap">
-          <table id="logTable"></table>
+        <!-- Game log -->
+        <section class="card full">
+          <h2>Game Log</h2>
+          <div class="sub">Tracked games (team score only)</div>
+          <div class="tableWrap">
+            <table id="logTable"></table>
+          </div>
+        </section>
+
+        <!-- Box score -->
+        <section class="card full">
+          <h2>Box Score</h2>
+          <div class="sub">Selected game breakdown (sorted by PTS)</div>
+          <div class="tableWrap">
+            <table id="boxTable"></table>
+          </div>
+        </section>
+
+        <!-- NEW: Trends -->
+        <section class="card full">
+          <div style="display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; align-items:flex-end;">
+            <div>
+              <h2>Trends</h2>
+              <div class="sub">Compare players over time (auto from games.json)</div>
+            </div>
+
+            <div class="controls">
+              <label>
+                Metric
+                <select id="trendMetric">
+                  <option value="pts">PTS</option>
+                  <option value="ast">AST</option>
+                  <option value="reb">REB</option>
+                  <option value="stl">STL</option>
+                  <option value="blk">BLK</option>
+                  <option value="fgp">FG%</option>
+                  <option value="tpp">3P%</option>
+                  <option value="tpm">3PM</option>
+                  <option value="tpa">3PA</option>
+                </select>
+              </label>
+
+              <label>
+                Players (Ctrl/Cmd multi-select)
+                <select id="trendPlayers" multiple size="5"></select>
+              </label>
+            </div>
+          </div>
+
+          <div class="chartWrap">
+            <canvas id="trendChart" width="1200" height="420"></canvas>
+          </div>
+        </section>
+
+        <div class="foot">
+          Tip: If you add a new game, just append it in <code>games.json</code> with the next <code>id</code>.
         </div>
-      </section>
+      </div>
     </main>
-
-    <footer class="wrap foot" style="display:flex; justify-content:space-between; gap:12px;">
-      <span>2kstats.gavinsmedia.com</span>
-      <a href="game.html">View Individual Game Stats →</a>
-    </footer>
 
     <script src="app.js"></script>
   </body>
 </html>
+
