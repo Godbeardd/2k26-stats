@@ -1,4 +1,3 @@
-/* styles.css */
 :root {
   --bg: #0b1020;
   --card: #111827;
@@ -163,6 +162,22 @@ tr:hover td { background: rgba(96, 165, 250, 0.06); }
   display: block;
   width: 100%;
   height: auto;
+}
+
+/* NEW: link styling */
+.link {
+  color: rgba(96, 165, 250, 0.95);
+  text-decoration: none;
+  font-size: 13px;
+}
+.link:hover { text-decoration: underline; }
+
+/* NEW: make game list rows feel clickable */
+.clickRow td {
+  cursor: pointer;
+}
+.clickRow:hover td {
+  background: rgba(34, 197, 94, 0.10);
 }
 
 @media (max-width: 900px) {
