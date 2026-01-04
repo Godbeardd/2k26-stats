@@ -61,7 +61,7 @@ function getQueryGame() {
 }
 
 async function main() {
-  const res = await fetch("./games.json", { cache: "no-store" });
+  const res = await fetch("/games.json", { cache: "no-store" });
   if (!res.ok) throw new Error("games.json not found / blocked");
   const data = await res.json();
 
