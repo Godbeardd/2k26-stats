@@ -1,5 +1,9 @@
 const fmtPct = (n) => (Number.isFinite(n) ? (n * 100).toFixed(1) + "%" : "—");
-const safeDiv = (a, b) => (b === 0 ? 0 : a / b);
+
+function cell(value) {
+  if (value && typeof value === "object" && "html" in value) return value;
+  return { text: String(value) };
+}
 
 function renderTable(el, headers, rows) {
   el.innerHTML = "";
@@ -17,12 +21,13 @@ function renderTable(el, headers, rows) {
   const tbody = document.createElement("tbody");
   rows.forEach((r) => {
     const tr = document.createElement("tr");
-    tr.className = r._className || "";
+    if (r._rowClass) tr.className = r._rowClass;
 
-    r.forEach((cell) => {
-      if (cell === r._className) return;
+    r.forEach((raw) => {
       const td = document.createElement("td");
-      td.textContent = cell;
+      const c = cell(raw);
+      if ("html" in c) td.innerHTML = c.html;
+      else td.textContent = c.text;
       tr.appendChild(td);
     });
 
@@ -57,6 +62,7 @@ function getQueryGame() {
 
 async function main() {
   const res = await fetch("./games.json", { cache: "no-store" });
+  if (!res.ok) throw new Error("games.json not found / blocked");
   const data = await res.json();
 
   const players = data.players;
@@ -74,18 +80,9 @@ async function main() {
   const g3PT = document.getElementById("g3PT");
 
   function renderGameList(selectedId) {
-    const rows = games.map((g) => {
-      const diff = g.for - g.against;
-      const wl = wlFrom(g);
-      const row = [g.id, formatGameLabel(g), diff];
-      row._className = "clickRow";
-      row._id = g.id;
-      row._selected = g.id === selectedId;
-      return row;
-    });
-
-    // custom render so we can attach click handlers + highlight selected
+    // Build simple table manually so rows can be clickable + highlight selected
     listTable.innerHTML = "";
+
     const thead = document.createElement("thead");
     const trh = document.createElement("tr");
     ["#", "Game", "Diff"].forEach((h) => {
@@ -97,25 +94,26 @@ async function main() {
     listTable.appendChild(thead);
 
     const tbody = document.createElement("tbody");
-    rows.forEach((r) => {
+
+    games.forEach((g) => {
+      const diff = g.for - g.against;
       const tr = document.createElement("tr");
       tr.className = "clickRow";
-      if (r._selected) tr.style.background = "rgba(96,165,250,0.10)";
+      if (g.id === selectedId) tr.style.background = "rgba(96,165,250,0.10)";
 
-      tr.addEventListener("click", () => {
-        loadGame(r._id);
-      });
+      tr.addEventListener("click", () => loadGame(g.id));
 
-      r.slice(0, 3).forEach((cell, i) => {
+      const cells = [g.id, formatGameLabel(g), diff];
+      cells.forEach((val, i) => {
         const td = document.createElement("td");
-        td.textContent = cell;
-        // left align the "Game" label
+        td.textContent = val;
         if (i === 1) td.style.textAlign = "left";
         tr.appendChild(td);
       });
 
       tbody.appendChild(tr);
     });
+
     listTable.appendChild(tbody);
   }
 
@@ -135,7 +133,7 @@ async function main() {
     gScore.textContent = `${g.for}-${g.against} (${wl})`;
     gDiff.textContent = String(diff);
 
-    // Team shooting totals (sum player stats we have)
+    // Team shooting totals (sum tracked players only)
     let fgm = 0, fga = 0, tpm = 0, tpa = 0;
     players.forEach((p) => {
       const s = g.players?.[p];
@@ -154,13 +152,18 @@ async function main() {
 
     const boxRows = players.map((p) => {
       const s = g.players?.[p];
-      if (!s) return [p, "—", "—", "—", "—", "—", "—", "—", "—", "—"];
+      if (!s) {
+        return [
+          { html: `<a class="plink" href="player.html?name=${encodeURIComponent(p)}">${p}</a>` },
+          "—","—","—","—","—","—","—","—","—"
+        ];
+      }
 
       const fgp = s.fga ? s.fgm / s.fga : NaN;
       const tpp = s.tpa ? s.tpm / s.tpa : NaN;
 
       return [
-        p,
+        { html: `<a class="plink" href="player.html?name=${encodeURIComponent(p)}">${p}</a>` },
         s.pts,
         s.reb,
         s.ast,
@@ -173,7 +176,8 @@ async function main() {
       ];
     });
 
-    boxRows.sort((a, b) => (b[1] ?? 0) - (a[1] ?? 0));
+    // sort by points desc (treat "—" as 0)
+    boxRows.sort((a, b) => (Number(b[1]) || 0) - (Number(a[1]) || 0));
 
     renderTable(
       boxTable,
@@ -182,7 +186,6 @@ async function main() {
     );
   }
 
-  // initial
   const initial = getQueryGame() ?? (games.at(-1)?.id ?? 1);
   renderGameList(initial);
   loadGame(initial);
@@ -190,5 +193,5 @@ async function main() {
 
 main().catch(() => {
   const sub = document.getElementById("subtitle");
-  if (sub) sub.textContent = "Failed to load games.json";
+  if (sub) sub.textContent = "Failed to load games.json (serve via http://localhost)";
 });
