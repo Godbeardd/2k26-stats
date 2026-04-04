@@ -1,5 +1,14 @@
 {
-  "players": ["Gavin", "AJ", "Austin", "Kevin", "Jake", "AI Player"],
+  "players": [
+    "Gavin",
+    "AJ",
+    "Austin",
+    "Kevin",
+    "Jake",
+    "AI Player",
+    "Mickey",
+    "Greg"
+  ],
   "games": [
     {
       "id": 1,
@@ -7,10 +16,50 @@
       "for": 65,
       "against": 88,
       "players": {
-        "AJ": { "pts": 16, "reb": 0, "ast": 11, "stl": 1, "blk": 0, "fgm": 6, "fga": 8, "tpm": 4, "tpa": 5 },
-        "Gavin": { "pts": 35, "reb": 0, "ast": 0, "stl": 0, "blk": 0, "fgm": 12, "fga": 16, "tpm": 11, "tpa": 14 },
-        "Austin": { "pts": 8, "reb": 5, "ast": 4, "stl": 0, "blk": 1, "fgm": 4, "fga": 10, "tpm": 0, "tpa": 3 },
-        "Kevin": { "pts": 6, "reb": 5, "ast": 5, "stl": 1, "blk": 1, "fgm": 2, "fga": 7, "tpm": 2, "tpa": 6 }
+        "AJ": {
+          "pts": 16,
+          "reb": 0,
+          "ast": 11,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 6,
+          "fga": 8,
+          "tpm": 4,
+          "tpa": 5
+        },
+        "Gavin": {
+          "pts": 35,
+          "reb": 0,
+          "ast": 0,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 12,
+          "fga": 16,
+          "tpm": 11,
+          "tpa": 14
+        },
+        "Austin": {
+          "pts": 8,
+          "reb": 5,
+          "ast": 4,
+          "stl": 0,
+          "blk": 1,
+          "fgm": 4,
+          "fga": 10,
+          "tpm": 0,
+          "tpa": 3
+        },
+        "Kevin": {
+          "pts": 6,
+          "reb": 5,
+          "ast": 5,
+          "stl": 1,
+          "blk": 1,
+          "fgm": 2,
+          "fga": 7,
+          "tpm": 2,
+          "tpa": 6
+        }
       }
     },
     {
@@ -19,11 +68,61 @@
       "for": 85,
       "against": 74,
       "players": {
-        "AJ": { "pts": 32, "reb": 0, "ast": 7, "stl": 0, "blk": 0, "fgm": 12, "fga": 17, "tpm": 8, "tpa": 10 },
-        "Gavin": { "pts": 18, "reb": 0, "ast": 4, "stl": 3, "blk": 0, "fgm": 7, "fga": 17, "tpm": 4, "tpa": 11 },
-        "Austin": { "pts": 21, "reb": 2, "ast": 4, "stl": 2, "blk": 0, "fgm": 9, "fga": 15, "tpm": 3, "tpa": 6 },
-        "Kevin": { "pts": 11, "reb": 0, "ast": 5, "stl": 1, "blk": 0, "fgm": 5, "fga": 8, "tpm": 1, "tpa": 3 },
-        "Jake": { "pts": 3, "reb": 17, "ast": 9, "stl": 1, "blk": 2, "fgm": 1, "fga": 1, "tpm": 1, "tpa": 1 }
+        "AJ": {
+          "pts": 32,
+          "reb": 0,
+          "ast": 7,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 12,
+          "fga": 17,
+          "tpm": 8,
+          "tpa": 10
+        },
+        "Gavin": {
+          "pts": 18,
+          "reb": 0,
+          "ast": 4,
+          "stl": 3,
+          "blk": 0,
+          "fgm": 7,
+          "fga": 17,
+          "tpm": 4,
+          "tpa": 11
+        },
+        "Austin": {
+          "pts": 21,
+          "reb": 2,
+          "ast": 4,
+          "stl": 2,
+          "blk": 0,
+          "fgm": 9,
+          "fga": 15,
+          "tpm": 3,
+          "tpa": 6
+        },
+        "Kevin": {
+          "pts": 11,
+          "reb": 0,
+          "ast": 5,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 5,
+          "fga": 8,
+          "tpm": 1,
+          "tpa": 3
+        },
+        "Jake": {
+          "pts": 3,
+          "reb": 17,
+          "ast": 9,
+          "stl": 1,
+          "blk": 2,
+          "fgm": 1,
+          "fga": 1,
+          "tpm": 1,
+          "tpa": 1
+        }
       }
     },
     {
@@ -32,11 +131,61 @@
       "for": 69,
       "against": 91,
       "players": {
-        "AJ": { "pts": 22, "reb": 0, "ast": 5, "stl": 0, "blk": 0, "fgm": 9, "fga": 14, "tpm": 4, "tpa": 8 },
-        "Gavin": { "pts": 18, "reb": 0, "ast": 1, "stl": 2, "blk": 0, "fgm": 7, "fga": 13, "tpm": 4, "tpa": 10 },
-        "Austin": { "pts": 9, "reb": 1, "ast": 5, "stl": 3, "blk": 0, "fgm": 4, "fga": 10, "tpm": 0, "tpa": 4 },
-        "Kevin": { "pts": 9, "reb": 0, "ast": 3, "stl": 1, "blk": 0, "fgm": 3, "fga": 5, "tpm": 3, "tpa": 5 },
-        "Jake": { "pts": 11, "reb": 13, "ast": 10, "stl": 0, "blk": 0, "fgm": 5, "fga": 9, "tpm": 1, "tpa": 5 }
+        "AJ": {
+          "pts": 22,
+          "reb": 0,
+          "ast": 5,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 9,
+          "fga": 14,
+          "tpm": 4,
+          "tpa": 8
+        },
+        "Gavin": {
+          "pts": 18,
+          "reb": 0,
+          "ast": 1,
+          "stl": 2,
+          "blk": 0,
+          "fgm": 7,
+          "fga": 13,
+          "tpm": 4,
+          "tpa": 10
+        },
+        "Austin": {
+          "pts": 9,
+          "reb": 1,
+          "ast": 5,
+          "stl": 3,
+          "blk": 0,
+          "fgm": 4,
+          "fga": 10,
+          "tpm": 0,
+          "tpa": 4
+        },
+        "Kevin": {
+          "pts": 9,
+          "reb": 0,
+          "ast": 3,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 3,
+          "fga": 5,
+          "tpm": 3,
+          "tpa": 5
+        },
+        "Jake": {
+          "pts": 11,
+          "reb": 13,
+          "ast": 10,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 5,
+          "fga": 9,
+          "tpm": 1,
+          "tpa": 5
+        }
       }
     },
     {
@@ -45,11 +194,61 @@
       "for": 90,
       "against": 63,
       "players": {
-        "AJ": { "pts": 17, "reb": 0, "ast": 6, "stl": 1, "blk": 0, "fgm": 6, "fga": 7, "tpm": 5, "tpa": 5 },
-        "Gavin": { "pts": 30, "reb": 0, "ast": 3, "stl": 3, "blk": 0, "fgm": 11, "fga": 17, "tpm": 8, "tpa": 13 },
-        "Austin": { "pts": 24, "reb": 1, "ast": 7, "stl": 2, "blk": 0, "fgm": 11, "fga": 15, "tpm": 2, "tpa": 4 },
-        "Kevin": { "pts": 17, "reb": 2, "ast": 6, "stl": 1, "blk": 0, "fgm": 8, "fga": 14, "tpm": 1, "tpa": 4 },
-        "Jake": { "pts": 2, "reb": 18, "ast": 12, "stl": 1, "blk": 1, "fgm": 1, "fga": 2, "tpm": 0, "tpa": 0 }
+        "AJ": {
+          "pts": 17,
+          "reb": 0,
+          "ast": 6,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 6,
+          "fga": 7,
+          "tpm": 5,
+          "tpa": 5
+        },
+        "Gavin": {
+          "pts": 30,
+          "reb": 0,
+          "ast": 3,
+          "stl": 3,
+          "blk": 0,
+          "fgm": 11,
+          "fga": 17,
+          "tpm": 8,
+          "tpa": 13
+        },
+        "Austin": {
+          "pts": 24,
+          "reb": 1,
+          "ast": 7,
+          "stl": 2,
+          "blk": 0,
+          "fgm": 11,
+          "fga": 15,
+          "tpm": 2,
+          "tpa": 4
+        },
+        "Kevin": {
+          "pts": 17,
+          "reb": 2,
+          "ast": 6,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 8,
+          "fga": 14,
+          "tpm": 1,
+          "tpa": 4
+        },
+        "Jake": {
+          "pts": 2,
+          "reb": 18,
+          "ast": 12,
+          "stl": 1,
+          "blk": 1,
+          "fgm": 1,
+          "fga": 2,
+          "tpm": 0,
+          "tpa": 0
+        }
       }
     },
     {
@@ -58,10 +257,50 @@
       "for": 62,
       "against": 65,
       "players": {
-        "Gavin": { "pts": 15, "reb": 1, "ast": 4, "stl": 2, "blk": 0, "fgm": 6, "fga": 15, "tpm": 3, "tpa": 10 },
-        "Austin": { "pts": 19, "reb": 4, "ast": 4, "stl": 0, "blk": 1, "fgm": 9, "fga": 12, "tpm": 1, "tpa": 2 },
-        "Kevin": { "pts": 12, "reb": 2, "ast": 8, "stl": 0, "blk": 1, "fgm": 5, "fga": 11, "tpm": 2, "tpa": 3 },
-        "Jake": { "pts": 13, "reb": 11, "ast": 4, "stl": 0, "blk": 0, "fgm": 5, "fga": 7, "tpm": 3, "tpa": 5 }
+        "Gavin": {
+          "pts": 15,
+          "reb": 1,
+          "ast": 4,
+          "stl": 2,
+          "blk": 0,
+          "fgm": 6,
+          "fga": 15,
+          "tpm": 3,
+          "tpa": 10
+        },
+        "Austin": {
+          "pts": 19,
+          "reb": 4,
+          "ast": 4,
+          "stl": 0,
+          "blk": 1,
+          "fgm": 9,
+          "fga": 12,
+          "tpm": 1,
+          "tpa": 2
+        },
+        "Kevin": {
+          "pts": 12,
+          "reb": 2,
+          "ast": 8,
+          "stl": 0,
+          "blk": 1,
+          "fgm": 5,
+          "fga": 11,
+          "tpm": 2,
+          "tpa": 3
+        },
+        "Jake": {
+          "pts": 13,
+          "reb": 11,
+          "ast": 4,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 5,
+          "fga": 7,
+          "tpm": 3,
+          "tpa": 5
+        }
       }
     },
     {
@@ -70,10 +309,50 @@
       "for": 71,
       "against": 64,
       "players": {
-        "AJ": { "pts": 21, "reb": 0, "ast": 11, "stl": 4, "blk": 0, "fgm": 9, "fga": 11, "tpm": 3, "tpa": 4 },
-        "Gavin": { "pts": 31, "reb": 0, "ast": 2, "stl": 1, "blk": 0, "fgm": 11, "fga": 14, "tpm": 8, "tpa": 11 },
-        "Kevin": { "pts": 9, "reb": 2, "ast": 4, "stl": 2, "blk": 0, "fgm": 3, "fga": 9, "tpm": 2, "tpa": 6 },
-        "Jake": { "pts": 5, "reb": 10, "ast": 1, "stl": 0, "blk": 0, "fgm": 2, "fga": 3, "tpm": 1, "tpa": 1 }
+        "AJ": {
+          "pts": 21,
+          "reb": 0,
+          "ast": 11,
+          "stl": 4,
+          "blk": 0,
+          "fgm": 9,
+          "fga": 11,
+          "tpm": 3,
+          "tpa": 4
+        },
+        "Gavin": {
+          "pts": 31,
+          "reb": 0,
+          "ast": 2,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 11,
+          "fga": 14,
+          "tpm": 8,
+          "tpa": 11
+        },
+        "Kevin": {
+          "pts": 9,
+          "reb": 2,
+          "ast": 4,
+          "stl": 2,
+          "blk": 0,
+          "fgm": 3,
+          "fga": 9,
+          "tpm": 2,
+          "tpa": 6
+        },
+        "Jake": {
+          "pts": 5,
+          "reb": 10,
+          "ast": 1,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 2,
+          "fga": 3,
+          "tpm": 1,
+          "tpa": 1
+        }
       }
     },
     {
@@ -82,10 +361,50 @@
       "for": 79,
       "against": 74,
       "players": {
-        "AJ": { "pts": 28, "reb": 0, "ast": 9, "stl": 3, "blk": 0, "fgm": 12, "fga": 16, "tpm": 4, "tpa": 7 },
-        "Gavin": { "pts": 32, "reb": 1, "ast": 3, "stl": 1, "blk": 0, "fgm": 11, "fga": 19, "tpm": 10, "tpa": 16 },
-        "Kevin": { "pts": 13, "reb": 1, "ast": 4, "stl": 0, "blk": 0, "fgm": 5, "fga": 10, "tpm": 3, "tpa": 5 },
-        "Jake": { "pts": 0, "reb": 18, "ast": 7, "stl": 0, "blk": 0, "fgm": 0, "fga": 2, "tpm": 0, "tpa": 1 }
+        "AJ": {
+          "pts": 28,
+          "reb": 0,
+          "ast": 9,
+          "stl": 3,
+          "blk": 0,
+          "fgm": 12,
+          "fga": 16,
+          "tpm": 4,
+          "tpa": 7
+        },
+        "Gavin": {
+          "pts": 32,
+          "reb": 1,
+          "ast": 3,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 11,
+          "fga": 19,
+          "tpm": 10,
+          "tpa": 16
+        },
+        "Kevin": {
+          "pts": 13,
+          "reb": 1,
+          "ast": 4,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 5,
+          "fga": 10,
+          "tpm": 3,
+          "tpa": 5
+        },
+        "Jake": {
+          "pts": 0,
+          "reb": 18,
+          "ast": 7,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 0,
+          "fga": 2,
+          "tpm": 0,
+          "tpa": 1
+        }
       }
     },
     {
@@ -94,10 +413,50 @@
       "for": 64,
       "against": 52,
       "players": {
-        "AJ": { "pts": 18, "reb": 0, "ast": 10, "stl": 1, "blk": 0, "fgm": 7, "fga": 15, "tpm": 3, "tpa": 7 },
-        "Gavin": { "pts": 19, "reb": 0, "ast": 1, "stl": 1, "blk": 0, "fgm": 7, "fga": 12, "tpm": 5, "tpa": 6 },
-        "Kevin": { "pts": 14, "reb": 1, "ast": 5, "stl": 1, "blk": 0, "fgm": 5, "fga": 11, "tpm": 3, "tpa": 7 },
-        "Jake": { "pts": 2, "reb": 21, "ast": 3, "stl": 0, "blk": 0, "fgm": 1, "fga": 2, "tpm": 0, "tpa": 0 }
+        "AJ": {
+          "pts": 18,
+          "reb": 0,
+          "ast": 10,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 7,
+          "fga": 15,
+          "tpm": 3,
+          "tpa": 7
+        },
+        "Gavin": {
+          "pts": 19,
+          "reb": 0,
+          "ast": 1,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 7,
+          "fga": 12,
+          "tpm": 5,
+          "tpa": 6
+        },
+        "Kevin": {
+          "pts": 14,
+          "reb": 1,
+          "ast": 5,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 5,
+          "fga": 11,
+          "tpm": 3,
+          "tpa": 7
+        },
+        "Jake": {
+          "pts": 2,
+          "reb": 21,
+          "ast": 3,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 1,
+          "fga": 2,
+          "tpm": 0,
+          "tpa": 0
+        }
       }
     },
     {
@@ -106,10 +465,50 @@
       "for": 84,
       "against": 59,
       "players": {
-        "AJ": { "pts": 32, "reb": 2, "ast": 10, "stl": 6, "blk": 0, "fgm": 14, "fga": 20, "tpm": 3, "tpa": 5 },
-        "Gavin": { "pts": 14, "reb": 0, "ast": 6, "stl": 0, "blk": 0, "fgm": 5, "fga": 10, "tpm": 4, "tpa": 6 },
-        "Kevin": { "pts": 30, "reb": 3, "ast": 2, "stl": 1, "blk": 1, "fgm": 10, "fga": 14, "tpm": 8, "tpa": 11 },
-        "Jake": { "pts": 8, "reb": 14, "ast": 4, "stl": 2, "blk": 0, "fgm": 3, "fga": 9, "tpm": 2, "tpa": 7 }
+        "AJ": {
+          "pts": 32,
+          "reb": 2,
+          "ast": 10,
+          "stl": 6,
+          "blk": 0,
+          "fgm": 14,
+          "fga": 20,
+          "tpm": 3,
+          "tpa": 5
+        },
+        "Gavin": {
+          "pts": 14,
+          "reb": 0,
+          "ast": 6,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 5,
+          "fga": 10,
+          "tpm": 4,
+          "tpa": 6
+        },
+        "Kevin": {
+          "pts": 30,
+          "reb": 3,
+          "ast": 2,
+          "stl": 1,
+          "blk": 1,
+          "fgm": 10,
+          "fga": 14,
+          "tpm": 8,
+          "tpa": 11
+        },
+        "Jake": {
+          "pts": 8,
+          "reb": 14,
+          "ast": 4,
+          "stl": 2,
+          "blk": 0,
+          "fgm": 3,
+          "fga": 9,
+          "tpm": 2,
+          "tpa": 7
+        }
       }
     },
     {
@@ -118,10 +517,50 @@
       "for": 91,
       "against": 89,
       "players": {
-        "AJ": { "pts": 29, "reb": 0, "ast": 9, "stl": 2, "blk": 0, "fgm": 11, "fga": 15, "tpm": 6, "tpa": 7 },
-        "Austin": { "pts": 23, "reb": 0, "ast": 6, "stl": 2, "blk": 0, "fgm": 11, "fga": 12, "tpm": 1, "tpa": 1 },
-        "Kevin": { "pts": 8, "reb": 2, "ast": 3, "stl": 0, "blk": 0, "fgm": 4, "fga": 8, "tpm": 0, "tpa": 2 },
-        "Jake": { "pts": 20, "reb": 10, "ast": 6, "stl": 0, "blk": 0, "fgm": 7, "fga": 9, "tpm": 6, "tpa": 7 }
+        "AJ": {
+          "pts": 29,
+          "reb": 0,
+          "ast": 9,
+          "stl": 2,
+          "blk": 0,
+          "fgm": 11,
+          "fga": 15,
+          "tpm": 6,
+          "tpa": 7
+        },
+        "Austin": {
+          "pts": 23,
+          "reb": 0,
+          "ast": 6,
+          "stl": 2,
+          "blk": 0,
+          "fgm": 11,
+          "fga": 12,
+          "tpm": 1,
+          "tpa": 1
+        },
+        "Kevin": {
+          "pts": 8,
+          "reb": 2,
+          "ast": 3,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 4,
+          "fga": 8,
+          "tpm": 0,
+          "tpa": 2
+        },
+        "Jake": {
+          "pts": 20,
+          "reb": 10,
+          "ast": 6,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 7,
+          "fga": 9,
+          "tpm": 6,
+          "tpa": 7
+        }
       }
     },
     {
@@ -130,10 +569,50 @@
       "for": 61,
       "against": 57,
       "players": {
-        "AJ": { "pts": 20, "reb": 0, "ast": 4, "stl": 3, "blk": 0, "fgm": 8, "fga": 13, "tpm": 4, "tpa": 6 },
-        "Austin": { "pts": 7, "reb": 1, "ast": 4, "stl": 2, "blk": 0, "fgm": 3, "fga": 6, "tpm": 1, "tpa": 3 },
-        "Kevin": { "pts": 14, "reb": 1, "ast": 4, "stl": 0, "blk": 0, "fgm": 5, "fga": 14, "tpm": 4, "tpa": 6 },
-        "Jake": { "pts": 15, "reb": 15, "ast": 4, "stl": 2, "blk": 1, "fgm": 5, "fga": 7, "tpm": 5, "tpa": 7 }
+        "AJ": {
+          "pts": 20,
+          "reb": 0,
+          "ast": 4,
+          "stl": 3,
+          "blk": 0,
+          "fgm": 8,
+          "fga": 13,
+          "tpm": 4,
+          "tpa": 6
+        },
+        "Austin": {
+          "pts": 7,
+          "reb": 1,
+          "ast": 4,
+          "stl": 2,
+          "blk": 0,
+          "fgm": 3,
+          "fga": 6,
+          "tpm": 1,
+          "tpa": 3
+        },
+        "Kevin": {
+          "pts": 14,
+          "reb": 1,
+          "ast": 4,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 5,
+          "fga": 14,
+          "tpm": 4,
+          "tpa": 6
+        },
+        "Jake": {
+          "pts": 15,
+          "reb": 15,
+          "ast": 4,
+          "stl": 2,
+          "blk": 1,
+          "fgm": 5,
+          "fga": 7,
+          "tpm": 5,
+          "tpa": 7
+        }
       }
     },
     {
@@ -142,10 +621,50 @@
       "for": 65,
       "against": 76,
       "players": {
-        "AJ": { "pts": 25, "reb": 0, "ast": 5, "stl": 2, "blk": 0, "fgm": 10, "fga": 15, "tpm": 4, "tpa": 6 },
-        "Austin": { "pts": 9, "reb": 1, "ast": 2, "stl": 1, "blk": 0, "fgm": 4, "fga": 8, "tpm": 1, "tpa": 4 },
-        "Kevin": { "pts": 6, "reb": 3, "ast": 8, "stl": 0, "blk": 0, "fgm": 3, "fga": 7, "tpm": 0, "tpa": 3 },
-        "Jake": { "pts": 13, "reb": 9, "ast": 2, "stl": 0, "blk": 0, "fgm": 4, "fga": 6, "tpm": 4, "tpa": 5 }
+        "AJ": {
+          "pts": 25,
+          "reb": 0,
+          "ast": 5,
+          "stl": 2,
+          "blk": 0,
+          "fgm": 10,
+          "fga": 15,
+          "tpm": 4,
+          "tpa": 6
+        },
+        "Austin": {
+          "pts": 9,
+          "reb": 1,
+          "ast": 2,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 4,
+          "fga": 8,
+          "tpm": 1,
+          "tpa": 4
+        },
+        "Kevin": {
+          "pts": 6,
+          "reb": 3,
+          "ast": 8,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 3,
+          "fga": 7,
+          "tpm": 0,
+          "tpa": 3
+        },
+        "Jake": {
+          "pts": 13,
+          "reb": 9,
+          "ast": 2,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 4,
+          "fga": 6,
+          "tpm": 4,
+          "tpa": 5
+        }
       }
     },
     {
@@ -154,9 +673,39 @@
       "for": 63,
       "against": 46,
       "players": {
-        "Austin": { "pts": 23, "reb": 1, "ast": 2, "stl": 2, "blk": 0, "fgm": 10, "fga": 12, "tpm": 2, "tpa": 2 },
-        "Kevin": { "pts": 11, "reb": 2, "ast": 4, "stl": 1, "blk": 0, "fgm": 4, "fga": 9, "tpm": 3, "tpa": 5 },
-        "Jake": { "pts": 12, "reb": 27, "ast": 10, "stl": 0, "blk": 0, "fgm": 5, "fga": 10, "tpm": 2, "tpa": 5 }
+        "Austin": {
+          "pts": 23,
+          "reb": 1,
+          "ast": 2,
+          "stl": 2,
+          "blk": 0,
+          "fgm": 10,
+          "fga": 12,
+          "tpm": 2,
+          "tpa": 2
+        },
+        "Kevin": {
+          "pts": 11,
+          "reb": 2,
+          "ast": 4,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 4,
+          "fga": 9,
+          "tpm": 3,
+          "tpa": 5
+        },
+        "Jake": {
+          "pts": 12,
+          "reb": 27,
+          "ast": 10,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 5,
+          "fga": 10,
+          "tpm": 2,
+          "tpa": 5
+        }
       }
     },
     {
@@ -165,10 +714,50 @@
       "for": 48,
       "against": 63,
       "players": {
-        "AJ": { "pts": 7, "reb": 3, "ast": 6, "stl": 1, "blk": 0, "fgm": 3, "fga": 12, "tpm": 1, "tpa": 7 },
-        "Austin": { "pts": 10, "reb": 0, "ast": 2, "stl": 0, "blk": 1, "fgm": 5, "fga": 10, "tpm": 0, "tpa": 2 },
-        "Kevin": { "pts": 7, "reb": 0, "ast": 2, "stl": 0, "blk": 0, "fgm": 3, "fga": 8, "tpm": 1, "tpa": 2 },
-        "Jake": { "pts": 18, "reb": 18, "ast": 6, "stl": 2, "blk": 1, "fgm": 7, "fga": 9, "tpm": 4, "tpa": 5 }
+        "AJ": {
+          "pts": 7,
+          "reb": 3,
+          "ast": 6,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 3,
+          "fga": 12,
+          "tpm": 1,
+          "tpa": 7
+        },
+        "Austin": {
+          "pts": 10,
+          "reb": 0,
+          "ast": 2,
+          "stl": 0,
+          "blk": 1,
+          "fgm": 5,
+          "fga": 10,
+          "tpm": 0,
+          "tpa": 2
+        },
+        "Kevin": {
+          "pts": 7,
+          "reb": 0,
+          "ast": 2,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 3,
+          "fga": 8,
+          "tpm": 1,
+          "tpa": 2
+        },
+        "Jake": {
+          "pts": 18,
+          "reb": 18,
+          "ast": 6,
+          "stl": 2,
+          "blk": 1,
+          "fgm": 7,
+          "fga": 9,
+          "tpm": 4,
+          "tpa": 5
+        }
       }
     },
     {
@@ -177,10 +766,50 @@
       "for": 82,
       "against": 38,
       "players": {
-        "AJ": { "pts": 12, "reb": 1, "ast": 7, "stl": 1, "blk": 0, "fgm": 4, "fga": 8, "tpm": 3, "tpa": 7 },
-        "Gavin": { "pts": 17, "reb": 1, "ast": 2, "stl": 3, "blk": 0, "fgm": 6, "fga": 9, "tpm": 5, "tpa": 6 },
-        "Kevin": { "pts": 7, "reb": 6, "ast": 5, "stl": 1, "blk": 0, "fgm": 2, "fga": 4, "tpm": 2, "tpa": 4 },
-        "Jake": { "pts": 16, "reb": 24, "ast": 6, "stl": 2, "blk": 4, "fgm": 6, "fga": 7, "tpm": 3, "tpa": 3 }
+        "AJ": {
+          "pts": 12,
+          "reb": 1,
+          "ast": 7,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 4,
+          "fga": 8,
+          "tpm": 3,
+          "tpa": 7
+        },
+        "Gavin": {
+          "pts": 17,
+          "reb": 1,
+          "ast": 2,
+          "stl": 3,
+          "blk": 0,
+          "fgm": 6,
+          "fga": 9,
+          "tpm": 5,
+          "tpa": 6
+        },
+        "Kevin": {
+          "pts": 7,
+          "reb": 6,
+          "ast": 5,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 2,
+          "fga": 4,
+          "tpm": 2,
+          "tpa": 4
+        },
+        "Jake": {
+          "pts": 16,
+          "reb": 24,
+          "ast": 6,
+          "stl": 2,
+          "blk": 4,
+          "fgm": 6,
+          "fga": 7,
+          "tpm": 3,
+          "tpa": 3
+        }
       }
     },
     {
@@ -189,11 +818,61 @@
       "for": 85,
       "against": 93,
       "players": {
-        "AJ": { "pts": 14, "reb": 0, "ast": 12, "stl": 0, "blk": 0, "fgm": 5, "fga": 7, "tpm": 3, "tpa": 5 },
-        "Gavin": { "pts": 25, "reb": 1, "ast": 2, "stl": 1, "blk": 0, "fgm": 10, "fga": 17, "tpm": 3, "tpa": 6 },
-        "AI Player": { "pts": 19, "reb": 1, "ast": 1, "stl": 0, "blk": 0, "fgm": 8, "fga": 9, "tpm": 3, "tpa": 4 },
-        "Kevin": { "pts": 7, "reb": 10, "ast": 7, "stl": 0, "blk": 0, "fgm": 3, "fga": 9, "tpm": 1, "tpa": 4 },
-        "Jake": { "pts": 20, "reb": 16, "ast": 7, "stl": 0, "blk": 1, "fgm": 7, "fga": 14, "tpm": 6, "tpa": 12 }
+        "AJ": {
+          "pts": 14,
+          "reb": 0,
+          "ast": 12,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 5,
+          "fga": 7,
+          "tpm": 3,
+          "tpa": 5
+        },
+        "Gavin": {
+          "pts": 25,
+          "reb": 1,
+          "ast": 2,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 10,
+          "fga": 17,
+          "tpm": 3,
+          "tpa": 6
+        },
+        "AI Player": {
+          "pts": 19,
+          "reb": 1,
+          "ast": 1,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 8,
+          "fga": 9,
+          "tpm": 3,
+          "tpa": 4
+        },
+        "Kevin": {
+          "pts": 7,
+          "reb": 10,
+          "ast": 7,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 3,
+          "fga": 9,
+          "tpm": 1,
+          "tpa": 4
+        },
+        "Jake": {
+          "pts": 20,
+          "reb": 16,
+          "ast": 7,
+          "stl": 0,
+          "blk": 1,
+          "fgm": 7,
+          "fga": 14,
+          "tpm": 6,
+          "tpa": 12
+        }
       }
     },
     {
@@ -202,11 +881,61 @@
       "for": 66,
       "against": 48,
       "players": {
-        "AJ": { "pts": 18, "reb": 3, "ast": 10, "stl": 2, "blk": 0, "fgm": 7, "fga": 10, "tpm": 4, "tpa": 6 },
-        "Gavin": { "pts": 6, "reb": 0, "ast": 4, "stl": 1, "blk": 0, "fgm": 2, "fga": 5, "tpm": 2, "tpa": 4 },
-        "Austin": { "pts": 15, "reb": 1, "ast": 1, "stl": 1, "blk": 1, "fgm": 6, "fga": 9, "tpm": 1, "tpa": 1 },
-        "Kevin": { "pts": 13, "reb": 0, "ast": 4, "stl": 0, "blk": 0, "fgm": 5, "fga": 8, "tpm": 2, "tpa": 5 },
-        "Jake": { "pts": 14, "reb": 15, "ast": 3, "stl": 0, "blk": 2, "fgm": 5, "fga": 8, "tpm": 4, "tpa": 6 }
+        "AJ": {
+          "pts": 18,
+          "reb": 3,
+          "ast": 10,
+          "stl": 2,
+          "blk": 0,
+          "fgm": 7,
+          "fga": 10,
+          "tpm": 4,
+          "tpa": 6
+        },
+        "Gavin": {
+          "pts": 6,
+          "reb": 0,
+          "ast": 4,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 2,
+          "fga": 5,
+          "tpm": 2,
+          "tpa": 4
+        },
+        "Austin": {
+          "pts": 15,
+          "reb": 1,
+          "ast": 1,
+          "stl": 1,
+          "blk": 1,
+          "fgm": 6,
+          "fga": 9,
+          "tpm": 1,
+          "tpa": 1
+        },
+        "Kevin": {
+          "pts": 13,
+          "reb": 0,
+          "ast": 4,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 5,
+          "fga": 8,
+          "tpm": 2,
+          "tpa": 5
+        },
+        "Jake": {
+          "pts": 14,
+          "reb": 15,
+          "ast": 3,
+          "stl": 0,
+          "blk": 2,
+          "fgm": 5,
+          "fga": 8,
+          "tpm": 4,
+          "tpa": 6
+        }
       }
     },
     {
@@ -215,11 +944,61 @@
       "for": 78,
       "against": 94,
       "players": {
-        "AJ": { "pts": 22, "reb": 0, "ast": 7, "stl": 5, "blk": 0, "fgm": 8, "fga": 10, "tpm": 5, "tpa": 7 },
-        "AI Player": { "pts": 2, "reb": 1, "ast": 3, "stl": 0, "blk": 1, "fgm": 1, "fga": 4, "tpm": 0, "tpa": 1 },
-        "Austin": { "pts": 15, "reb": 0, "ast": 3, "stl": 0, "blk": 1, "fgm": 7, "fga": 11, "tpm": 1, "tpa": 3 },
-        "Kevin": { "pts": 22, "reb": 2, "ast": 8, "stl": 0, "blk": 1, "fgm": 8, "fga": 14, "tpm": 6, "tpa": 7 },
-        "Jake": { "pts": 17, "reb": 8, "ast": 4, "stl": 0, "blk": 0, "fgm": 6, "fga": 7, "tpm": 5, "tpa": 6 }
+        "AJ": {
+          "pts": 22,
+          "reb": 0,
+          "ast": 7,
+          "stl": 5,
+          "blk": 0,
+          "fgm": 8,
+          "fga": 10,
+          "tpm": 5,
+          "tpa": 7
+        },
+        "AI Player": {
+          "pts": 2,
+          "reb": 1,
+          "ast": 3,
+          "stl": 0,
+          "blk": 1,
+          "fgm": 1,
+          "fga": 4,
+          "tpm": 0,
+          "tpa": 1
+        },
+        "Austin": {
+          "pts": 15,
+          "reb": 0,
+          "ast": 3,
+          "stl": 0,
+          "blk": 1,
+          "fgm": 7,
+          "fga": 11,
+          "tpm": 1,
+          "tpa": 3
+        },
+        "Kevin": {
+          "pts": 22,
+          "reb": 2,
+          "ast": 8,
+          "stl": 0,
+          "blk": 1,
+          "fgm": 8,
+          "fga": 14,
+          "tpm": 6,
+          "tpa": 7
+        },
+        "Jake": {
+          "pts": 17,
+          "reb": 8,
+          "ast": 4,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 6,
+          "fga": 7,
+          "tpm": 5,
+          "tpa": 6
+        }
       }
     },
     {
@@ -228,25 +1007,124 @@
       "for": 71,
       "against": 78,
       "players": {
-        "AJ": { "pts": 25, "reb": 1, "ast": 8, "stl": 4, "blk": 0, "fgm": 9, "fga": 16, "tpm": 7, "tpa": 10 },
-        "AI Player": { "pts": 6, "reb": 2, "ast": 4, "stl": 0, "blk": 0, "fgm": 3, "fga": 3, "tpm": 0, "tpa": 0 },
-        "Austin": { "pts": 13, "reb": 0, "ast": 2, "stl": 1, "blk": 0, "fgm": 6, "fga": 7, "tpm": 1, "tpa": 2 },
-        "Kevin": { "pts": 14, "reb": 2, "ast": 6, "stl": 1, "blk": 0, "fgm": 5, "fga": 11, "tpm": 3, "tpa": 8 },
-        "Jake": { "pts": 13, "reb": 9, "ast": 5, "stl": 0, "blk": 0, "fgm": 5, "fga": 10, "tpm": 3, "tpa": 8 }
+        "AJ": {
+          "pts": 25,
+          "reb": 1,
+          "ast": 8,
+          "stl": 4,
+          "blk": 0,
+          "fgm": 9,
+          "fga": 16,
+          "tpm": 7,
+          "tpa": 10
+        },
+        "AI Player": {
+          "pts": 6,
+          "reb": 2,
+          "ast": 4,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 3,
+          "fga": 3,
+          "tpm": 0,
+          "tpa": 0
+        },
+        "Austin": {
+          "pts": 13,
+          "reb": 0,
+          "ast": 2,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 6,
+          "fga": 7,
+          "tpm": 1,
+          "tpa": 2
+        },
+        "Kevin": {
+          "pts": 14,
+          "reb": 2,
+          "ast": 6,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 5,
+          "fga": 11,
+          "tpm": 3,
+          "tpa": 8
+        },
+        "Jake": {
+          "pts": 13,
+          "reb": 9,
+          "ast": 5,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 5,
+          "fga": 10,
+          "tpm": 3,
+          "tpa": 8
+        }
       }
     },
-
     {
       "id": 20,
       "date": "2026-02-01",
       "for": 76,
       "against": 93,
       "players": {
-        "AJ": { "pts": 18, "reb": 0, "ast": 9, "stl": 1, "blk": 0, "fgm": 7, "fga": 11, "tpm": 4, "tpa": 7 },
-        "Gavin": { "pts": 9, "reb": 0, "ast": 3, "stl": 0, "blk": 0, "fgm": 3, "fga": 10, "tpm": 3, "tpa": 8 },
-        "Austin": { "pts": 23, "reb": 1, "ast": 2, "stl": 2, "blk": 0, "fgm": 10, "fga": 13, "tpm": 3, "tpa": 4 },
-        "Kevin": { "pts": 2, "reb": 3, "ast": 6, "stl": 0, "blk": 0, "fgm": 1, "fga": 6, "tpm": 0, "tpa": 2 },
-        "Jake": { "pts": 24, "reb": 9, "ast": 8, "stl": 1, "blk": 0, "fgm": 9, "fga": 13, "tpm": 6, "tpa": 10 }
+        "AJ": {
+          "pts": 18,
+          "reb": 0,
+          "ast": 9,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 7,
+          "fga": 11,
+          "tpm": 4,
+          "tpa": 7
+        },
+        "Gavin": {
+          "pts": 9,
+          "reb": 0,
+          "ast": 3,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 3,
+          "fga": 10,
+          "tpm": 3,
+          "tpa": 8
+        },
+        "Austin": {
+          "pts": 23,
+          "reb": 1,
+          "ast": 2,
+          "stl": 2,
+          "blk": 0,
+          "fgm": 10,
+          "fga": 13,
+          "tpm": 3,
+          "tpa": 4
+        },
+        "Kevin": {
+          "pts": 2,
+          "reb": 3,
+          "ast": 6,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 1,
+          "fga": 6,
+          "tpm": 0,
+          "tpa": 2
+        },
+        "Jake": {
+          "pts": 24,
+          "reb": 9,
+          "ast": 8,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 9,
+          "fga": 13,
+          "tpm": 6,
+          "tpa": 10
+        }
       }
     },
     {
@@ -255,11 +1133,61 @@
       "for": 75,
       "against": 62,
       "players": {
-        "AJ": { "pts": 25, "reb": 0, "ast": 6, "stl": 3, "blk": 0, "fgm": 9, "fga": 14, "tpm": 7, "tpa": 11 },
-        "Gavin": { "pts": 15, "reb": 0, "ast": 5, "stl": 3, "blk": 0, "fgm": 5, "fga": 13, "tpm": 5, "tpa": 12 },
-        "Austin": { "pts": 16, "reb": 1, "ast": 4, "stl": 0, "blk": 0, "fgm": 8, "fga": 10, "tpm": 0, "tpa": 0 },
-        "Kevin": { "pts": 13, "reb": 2, "ast": 4, "stl": 1, "blk": 0, "fgm": 4, "fga": 7, "tpm": 2, "tpa": 4 },
-        "Jake": { "pts": 6, "reb": 14, "ast": 4, "stl": 1, "blk": 1, "fgm": 2, "fga": 3, "tpm": 2, "tpa": 3 }
+        "AJ": {
+          "pts": 25,
+          "reb": 0,
+          "ast": 6,
+          "stl": 3,
+          "blk": 0,
+          "fgm": 9,
+          "fga": 14,
+          "tpm": 7,
+          "tpa": 11
+        },
+        "Gavin": {
+          "pts": 15,
+          "reb": 0,
+          "ast": 5,
+          "stl": 3,
+          "blk": 0,
+          "fgm": 5,
+          "fga": 13,
+          "tpm": 5,
+          "tpa": 12
+        },
+        "Austin": {
+          "pts": 16,
+          "reb": 1,
+          "ast": 4,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 8,
+          "fga": 10,
+          "tpm": 0,
+          "tpa": 0
+        },
+        "Kevin": {
+          "pts": 13,
+          "reb": 2,
+          "ast": 4,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 4,
+          "fga": 7,
+          "tpm": 2,
+          "tpa": 4
+        },
+        "Jake": {
+          "pts": 6,
+          "reb": 14,
+          "ast": 4,
+          "stl": 1,
+          "blk": 1,
+          "fgm": 2,
+          "fga": 3,
+          "tpm": 2,
+          "tpa": 3
+        }
       }
     },
     {
@@ -268,11 +1196,61 @@
       "for": 67,
       "against": 39,
       "players": {
-        "AJ": { "pts": 27, "reb": 1, "ast": 9, "stl": 2, "blk": 0, "fgm": 11, "fga": 16, "tpm": 5, "tpa": 7 },
-        "Gavin": { "pts": 17, "reb": 0, "ast": 4, "stl": 2, "blk": 0, "fgm": 7, "fga": 10, "tpm": 3, "tpa": 6 },
-        "Austin": { "pts": 15, "reb": 4, "ast": 2, "stl": 1, "blk": 0, "fgm": 7, "fga": 10, "tpm": 1, "tpa": 4 },
-        "Kevin": { "pts": 1, "reb": 11, "ast": 4, "stl": 1, "blk": 0, "fgm": 0, "fga": 2, "tpm": 0, "tpa": 0 },
-        "AI Player": { "pts": 7, "reb": 6, "ast": 2, "stl": 4, "blk": 0, "fgm": 2, "fga": 3, "tpm": 1, "tpa": 1 }
+        "AJ": {
+          "pts": 27,
+          "reb": 1,
+          "ast": 9,
+          "stl": 2,
+          "blk": 0,
+          "fgm": 11,
+          "fga": 16,
+          "tpm": 5,
+          "tpa": 7
+        },
+        "Gavin": {
+          "pts": 17,
+          "reb": 0,
+          "ast": 4,
+          "stl": 2,
+          "blk": 0,
+          "fgm": 7,
+          "fga": 10,
+          "tpm": 3,
+          "tpa": 6
+        },
+        "Austin": {
+          "pts": 15,
+          "reb": 4,
+          "ast": 2,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 7,
+          "fga": 10,
+          "tpm": 1,
+          "tpa": 4
+        },
+        "Kevin": {
+          "pts": 1,
+          "reb": 11,
+          "ast": 4,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 0,
+          "fga": 2,
+          "tpm": 0,
+          "tpa": 0
+        },
+        "AI Player": {
+          "pts": 7,
+          "reb": 6,
+          "ast": 2,
+          "stl": 4,
+          "blk": 0,
+          "fgm": 2,
+          "fga": 3,
+          "tpm": 1,
+          "tpa": 1
+        }
       }
     },
     {
@@ -281,11 +1259,61 @@
       "for": 85,
       "against": 92,
       "players": {
-        "AJ": { "pts": 13, "reb": 0, "ast": 10, "stl": 2, "blk": 0, "fgm": 5, "fga": 5, "tpm": 3, "tpa": 3 },
-        "Gavin": { "pts": 27, "reb": 0, "ast": 3, "stl": 2, "blk": 0, "fgm": 10, "fga": 20, "tpm": 7, "tpa": 14 },
-        "Austin": { "pts": 14, "reb": 1, "ast": 1, "stl": 1, "blk": 0, "fgm": 6, "fga": 9, "tpm": 2, "tpa": 2 },
-        "Kevin": { "pts": 22, "reb": 3, "ast": 3, "stl": 0, "blk": 0, "fgm": 8, "fga": 14, "tpm": 6, "tpa": 10 },
-        "Jake": { "pts": 9, "reb": 9, "ast": 11, "stl": 0, "blk": 0, "fgm": 3, "fga": 5, "tpm": 3, "tpa": 3 }
+        "AJ": {
+          "pts": 13,
+          "reb": 0,
+          "ast": 10,
+          "stl": 2,
+          "blk": 0,
+          "fgm": 5,
+          "fga": 5,
+          "tpm": 3,
+          "tpa": 3
+        },
+        "Gavin": {
+          "pts": 27,
+          "reb": 0,
+          "ast": 3,
+          "stl": 2,
+          "blk": 0,
+          "fgm": 10,
+          "fga": 20,
+          "tpm": 7,
+          "tpa": 14
+        },
+        "Austin": {
+          "pts": 14,
+          "reb": 1,
+          "ast": 1,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 6,
+          "fga": 9,
+          "tpm": 2,
+          "tpa": 2
+        },
+        "Kevin": {
+          "pts": 22,
+          "reb": 3,
+          "ast": 3,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 8,
+          "fga": 14,
+          "tpm": 6,
+          "tpa": 10
+        },
+        "Jake": {
+          "pts": 9,
+          "reb": 9,
+          "ast": 11,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 3,
+          "fga": 5,
+          "tpm": 3,
+          "tpa": 3
+        }
       }
     },
     {
@@ -294,11 +1322,61 @@
       "for": 70,
       "against": 85,
       "players": {
-        "AJ": { "pts": 25, "reb": 0, "ast": 5, "stl": 1, "blk": 0, "fgm": 9, "fga": 16, "tpm": 6, "tpa": 8 },
-        "Gavin": { "pts": 18, "reb": 2, "ast": 4, "stl": 1, "blk": 0, "fgm": 6, "fga": 9, "tpm": 4, "tpa": 7 },
-        "Austin": { "pts": 9, "reb": 0, "ast": 4, "stl": 3, "blk": 0, "fgm": 4, "fga": 6, "tpm": 1, "tpa": 2 },
-        "Kevin": { "pts": 10, "reb": 3, "ast": 4, "stl": 2, "blk": 0, "fgm": 4, "fga": 9, "tpm": 2, "tpa": 4 },
-        "Jake": { "pts": 8, "reb": 8, "ast": 6, "stl": 0, "blk": 0, "fgm": 3, "fga": 4, "tpm": 2, "tpa": 3 }
+        "AJ": {
+          "pts": 25,
+          "reb": 0,
+          "ast": 5,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 9,
+          "fga": 16,
+          "tpm": 6,
+          "tpa": 8
+        },
+        "Gavin": {
+          "pts": 18,
+          "reb": 2,
+          "ast": 4,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 6,
+          "fga": 9,
+          "tpm": 4,
+          "tpa": 7
+        },
+        "Austin": {
+          "pts": 9,
+          "reb": 0,
+          "ast": 4,
+          "stl": 3,
+          "blk": 0,
+          "fgm": 4,
+          "fga": 6,
+          "tpm": 1,
+          "tpa": 2
+        },
+        "Kevin": {
+          "pts": 10,
+          "reb": 3,
+          "ast": 4,
+          "stl": 2,
+          "blk": 0,
+          "fgm": 4,
+          "fga": 9,
+          "tpm": 2,
+          "tpa": 4
+        },
+        "Jake": {
+          "pts": 8,
+          "reb": 8,
+          "ast": 6,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 3,
+          "fga": 4,
+          "tpm": 2,
+          "tpa": 3
+        }
       }
     },
     {
@@ -307,25 +1385,124 @@
       "for": 71,
       "against": 99,
       "players": {
-        "AJ": { "pts": 13, "reb": 0, "ast": 4, "stl": 2, "blk": 0, "fgm": 6, "fga": 8, "tpm": 1, "tpa": 3 },
-        "Gavin": { "pts": 11, "reb": 1, "ast": 4, "stl": 1, "blk": 0, "fgm": 4, "fga": 13, "tpm": 3, "tpa": 10 },
-        "Austin": { "pts": 15, "reb": 0, "ast": 1, "stl": 1, "blk": 0, "fgm": 7, "fga": 10, "tpm": 1, "tpa": 3 },
-        "Kevin": { "pts": 24, "reb": 2, "ast": 1, "stl": 0, "blk": 0, "fgm": 9, "fga": 15, "tpm": 6, "tpa": 9 },
-        "Jake": { "pts": 8, "reb": 7, "ast": 10, "stl": 0, "blk": 0, "fgm": 3, "fga": 6, "tpm": 2, "tpa": 2 }
+        "AJ": {
+          "pts": 13,
+          "reb": 0,
+          "ast": 4,
+          "stl": 2,
+          "blk": 0,
+          "fgm": 6,
+          "fga": 8,
+          "tpm": 1,
+          "tpa": 3
+        },
+        "Gavin": {
+          "pts": 11,
+          "reb": 1,
+          "ast": 4,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 4,
+          "fga": 13,
+          "tpm": 3,
+          "tpa": 10
+        },
+        "Austin": {
+          "pts": 15,
+          "reb": 0,
+          "ast": 1,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 7,
+          "fga": 10,
+          "tpm": 1,
+          "tpa": 3
+        },
+        "Kevin": {
+          "pts": 24,
+          "reb": 2,
+          "ast": 1,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 9,
+          "fga": 15,
+          "tpm": 6,
+          "tpa": 9
+        },
+        "Jake": {
+          "pts": 8,
+          "reb": 7,
+          "ast": 10,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 3,
+          "fga": 6,
+          "tpm": 2,
+          "tpa": 2
+        }
       }
     },
-
     {
       "id": 26,
       "date": "2026-02-14",
       "for": 72,
       "against": 60,
       "players": {
-        "AJ": { "pts": 23, "reb": 2, "ast": 10, "stl": 1, "blk": 0, "fgm": 9, "fga": 13, "tpm": 5, "tpa": 7 },
-        "Gavin": { "pts": 15, "reb": 1, "ast": 4, "stl": 4, "blk": 0, "fgm": 6, "fga": 9, "tpm": 3, "tpa": 4 },
-        "AI Player": { "pts": 9, "reb": 3, "ast": 5, "stl": 0, "blk": 0, "fgm": 4, "fga": 5, "tpm": 1, "tpa": 2 },
-        "Kevin": { "pts": 12, "reb": 3, "ast": 3, "stl": 0, "blk": 0, "fgm": 4, "fga": 9, "tpm": 2, "tpa": 3 },
-        "Jake": { "pts": 13, "reb": 13, "ast": 2, "stl": 0, "blk": 1, "fgm": 5, "fga": 10, "tpm": 3, "tpa": 6 }
+        "AJ": {
+          "pts": 23,
+          "reb": 2,
+          "ast": 10,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 9,
+          "fga": 13,
+          "tpm": 5,
+          "tpa": 7
+        },
+        "Gavin": {
+          "pts": 15,
+          "reb": 1,
+          "ast": 4,
+          "stl": 4,
+          "blk": 0,
+          "fgm": 6,
+          "fga": 9,
+          "tpm": 3,
+          "tpa": 4
+        },
+        "AI Player": {
+          "pts": 9,
+          "reb": 3,
+          "ast": 5,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 4,
+          "fga": 5,
+          "tpm": 1,
+          "tpa": 2
+        },
+        "Kevin": {
+          "pts": 12,
+          "reb": 3,
+          "ast": 3,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 4,
+          "fga": 9,
+          "tpm": 2,
+          "tpa": 3
+        },
+        "Jake": {
+          "pts": 13,
+          "reb": 13,
+          "ast": 2,
+          "stl": 0,
+          "blk": 1,
+          "fgm": 5,
+          "fga": 10,
+          "tpm": 3,
+          "tpa": 6
+        }
       }
     },
     {
@@ -334,11 +1511,61 @@
       "for": 63,
       "against": 62,
       "players": {
-        "AJ": { "pts": 12, "reb": 0, "ast": 10, "stl": 2, "blk": 0, "fgm": 4, "fga": 6, "tpm": 3, "tpa": 5 },
-        "Gavin": { "pts": 14, "reb": 3, "ast": 0, "stl": 2, "blk": 0, "fgm": 6, "fga": 12, "tpm": 2, "tpa": 5 },
-        "AI Player": { "pts": 2, "reb": 3, "ast": 1, "stl": 1, "blk": 0, "fgm": 1, "fga": 4, "tpm": 0, "tpa": 3 },
-        "Kevin": { "pts": 21, "reb": 2, "ast": 2, "stl": 2, "blk": 1, "fgm": 7, "fga": 13, "tpm": 5, "tpa": 8 },
-        "Jake": { "pts": 14, "reb": 13, "ast": 9, "stl": 1, "blk": 0, "fgm": 5, "fga": 9, "tpm": 4, "tpa": 7 }
+        "AJ": {
+          "pts": 12,
+          "reb": 0,
+          "ast": 10,
+          "stl": 2,
+          "blk": 0,
+          "fgm": 4,
+          "fga": 6,
+          "tpm": 3,
+          "tpa": 5
+        },
+        "Gavin": {
+          "pts": 14,
+          "reb": 3,
+          "ast": 0,
+          "stl": 2,
+          "blk": 0,
+          "fgm": 6,
+          "fga": 12,
+          "tpm": 2,
+          "tpa": 5
+        },
+        "AI Player": {
+          "pts": 2,
+          "reb": 3,
+          "ast": 1,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 1,
+          "fga": 4,
+          "tpm": 0,
+          "tpa": 3
+        },
+        "Kevin": {
+          "pts": 21,
+          "reb": 2,
+          "ast": 2,
+          "stl": 2,
+          "blk": 1,
+          "fgm": 7,
+          "fga": 13,
+          "tpm": 5,
+          "tpa": 8
+        },
+        "Jake": {
+          "pts": 14,
+          "reb": 13,
+          "ast": 9,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 5,
+          "fga": 9,
+          "tpm": 4,
+          "tpa": 7
+        }
       }
     },
     {
@@ -347,25 +1574,124 @@
       "for": 93,
       "against": 58,
       "players": {
-        "AJ": { "pts": 18, "reb": 0, "ast": 11, "stl": 2, "blk": 0, "fgm": 8, "fga": 9, "tpm": 2, "tpa": 3 },
-        "Gavin": { "pts": 23, "reb": 0, "ast": 3, "stl": 2, "blk": 0, "fgm": 9, "fga": 13, "tpm": 5, "tpa": 8 },
-        "AI Player": { "pts": 5, "reb": 2, "ast": 3, "stl": 0, "blk": 0, "fgm": 2, "fga": 2, "tpm": 1, "tpa": 1 },
-        "Kevin": { "pts": 14, "reb": 1, "ast": 5, "stl": 0, "blk": 1, "fgm": 6, "fga": 8, "tpm": 2, "tpa": 2 },
-        "Jake": { "pts": 33, "reb": 18, "ast": 10, "stl": 0, "blk": 0, "fgm": 11, "fga": 12, "tpm": 11, "tpa": 12 }
+        "AJ": {
+          "pts": 18,
+          "reb": 0,
+          "ast": 11,
+          "stl": 2,
+          "blk": 0,
+          "fgm": 8,
+          "fga": 9,
+          "tpm": 2,
+          "tpa": 3
+        },
+        "Gavin": {
+          "pts": 23,
+          "reb": 0,
+          "ast": 3,
+          "stl": 2,
+          "blk": 0,
+          "fgm": 9,
+          "fga": 13,
+          "tpm": 5,
+          "tpa": 8
+        },
+        "AI Player": {
+          "pts": 5,
+          "reb": 2,
+          "ast": 3,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 2,
+          "fga": 2,
+          "tpm": 1,
+          "tpa": 1
+        },
+        "Kevin": {
+          "pts": 14,
+          "reb": 1,
+          "ast": 5,
+          "stl": 0,
+          "blk": 1,
+          "fgm": 6,
+          "fga": 8,
+          "tpm": 2,
+          "tpa": 2
+        },
+        "Jake": {
+          "pts": 33,
+          "reb": 18,
+          "ast": 10,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 11,
+          "fga": 12,
+          "tpm": 11,
+          "tpa": 12
+        }
       }
     },
-
     {
       "id": 29,
       "date": "2026-02-15",
       "for": 93,
       "against": 98,
       "players": {
-        "AJ": { "pts": 18, "reb": 1, "ast": 5, "stl": 3, "blk": 0, "fgm": 7, "fga": 14, "tpm": 4, "tpa": 8 },
-        "Gavin": { "pts": 13, "reb": 2, "ast": 8, "stl": 0, "blk": 1, "fgm": 5, "fga": 11, "tpm": 3, "tpa": 6 },
-        "Austin": { "pts": 17, "reb": 2, "ast": 2, "stl": 0, "blk": 1, "fgm": 6, "fga": 9, "tpm": 1, "tpa": 2 },
-        "Kevin": { "pts": 27, "reb": 2, "ast": 4, "stl": 1, "blk": 0, "fgm": 11, "fga": 15, "tpm": 3, "tpa": 5 },
-        "Jake": { "pts": 18, "reb": 8, "ast": 12, "stl": 1, "blk": 0, "fgm": 7, "fga": 7, "tpm": 4, "tpa": 4 }
+        "AJ": {
+          "pts": 18,
+          "reb": 1,
+          "ast": 5,
+          "stl": 3,
+          "blk": 0,
+          "fgm": 7,
+          "fga": 14,
+          "tpm": 4,
+          "tpa": 8
+        },
+        "Gavin": {
+          "pts": 13,
+          "reb": 2,
+          "ast": 8,
+          "stl": 0,
+          "blk": 1,
+          "fgm": 5,
+          "fga": 11,
+          "tpm": 3,
+          "tpa": 6
+        },
+        "Austin": {
+          "pts": 17,
+          "reb": 2,
+          "ast": 2,
+          "stl": 0,
+          "blk": 1,
+          "fgm": 6,
+          "fga": 9,
+          "tpm": 1,
+          "tpa": 2
+        },
+        "Kevin": {
+          "pts": 27,
+          "reb": 2,
+          "ast": 4,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 11,
+          "fga": 15,
+          "tpm": 3,
+          "tpa": 5
+        },
+        "Jake": {
+          "pts": 18,
+          "reb": 8,
+          "ast": 12,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 7,
+          "fga": 7,
+          "tpm": 4,
+          "tpa": 4
+        }
       }
     },
     {
@@ -374,11 +1700,61 @@
       "for": 90,
       "against": 84,
       "players": {
-        "AJ": { "pts": 30, "reb": 1, "ast": 9, "stl": 1, "blk": 0, "fgm": 13, "fga": 15, "tpm": 4, "tpa": 6 },
-        "Gavin": { "pts": 11, "reb": 0, "ast": 4, "stl": 2, "blk": 0, "fgm": 4, "fga": 6, "tpm": 2, "tpa": 4 },
-        "Austin": { "pts": 22, "reb": 2, "ast": 4, "stl": 0, "blk": 0, "fgm": 11, "fga": 17, "tpm": 0, "tpa": 2 },
-        "Kevin": { "pts": 17, "reb": 6, "ast": 4, "stl": 2, "blk": 0, "fgm": 5, "fga": 9, "tpm": 3, "tpa": 3 },
-        "Jake": { "pts": 10, "reb": 15, "ast": 7, "stl": 0, "blk": 1, "fgm": 4, "fga": 5, "tpm": 2, "tpa": 2 }
+        "AJ": {
+          "pts": 30,
+          "reb": 1,
+          "ast": 9,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 13,
+          "fga": 15,
+          "tpm": 4,
+          "tpa": 6
+        },
+        "Gavin": {
+          "pts": 11,
+          "reb": 0,
+          "ast": 4,
+          "stl": 2,
+          "blk": 0,
+          "fgm": 4,
+          "fga": 6,
+          "tpm": 2,
+          "tpa": 4
+        },
+        "Austin": {
+          "pts": 22,
+          "reb": 2,
+          "ast": 4,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 11,
+          "fga": 17,
+          "tpm": 0,
+          "tpa": 2
+        },
+        "Kevin": {
+          "pts": 17,
+          "reb": 6,
+          "ast": 4,
+          "stl": 2,
+          "blk": 0,
+          "fgm": 5,
+          "fga": 9,
+          "tpm": 3,
+          "tpa": 3
+        },
+        "Jake": {
+          "pts": 10,
+          "reb": 15,
+          "ast": 7,
+          "stl": 0,
+          "blk": 1,
+          "fgm": 4,
+          "fga": 5,
+          "tpm": 2,
+          "tpa": 2
+        }
       }
     },
     {
@@ -387,11 +1763,61 @@
       "for": 62,
       "against": 64,
       "players": {
-        "AJ": { "pts": 17, "reb": 0, "ast": 9, "stl": 2, "blk": 0, "fgm": 7, "fga": 14, "tpm": 3, "tpa": 6 },
-        "Gavin": { "pts": 5, "reb": 3, "ast": 3, "stl": 0, "blk": 0, "fgm": 2, "fga": 5, "tpm": 1, "tpa": 4 },
-        "Austin": { "pts": 20, "reb": 2, "ast": 3, "stl": 1, "blk": 1, "fgm": 9, "fga": 13, "tpm": 2, "tpa": 3 },
-        "Kevin": { "pts": 9, "reb": 5, "ast": 3, "stl": 3, "blk": 0, "fgm": 4, "fga": 10, "tpm": 1, "tpa": 4 },
-        "Jake": { "pts": 11, "reb": 10, "ast": 4, "stl": 0, "blk": 0, "fgm": 4, "fga": 12, "tpm": 3, "tpa": 6 }
+        "AJ": {
+          "pts": 17,
+          "reb": 0,
+          "ast": 9,
+          "stl": 2,
+          "blk": 0,
+          "fgm": 7,
+          "fga": 14,
+          "tpm": 3,
+          "tpa": 6
+        },
+        "Gavin": {
+          "pts": 5,
+          "reb": 3,
+          "ast": 3,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 2,
+          "fga": 5,
+          "tpm": 1,
+          "tpa": 4
+        },
+        "Austin": {
+          "pts": 20,
+          "reb": 2,
+          "ast": 3,
+          "stl": 1,
+          "blk": 1,
+          "fgm": 9,
+          "fga": 13,
+          "tpm": 2,
+          "tpa": 3
+        },
+        "Kevin": {
+          "pts": 9,
+          "reb": 5,
+          "ast": 3,
+          "stl": 3,
+          "blk": 0,
+          "fgm": 4,
+          "fga": 10,
+          "tpm": 1,
+          "tpa": 4
+        },
+        "Jake": {
+          "pts": 11,
+          "reb": 10,
+          "ast": 4,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 4,
+          "fga": 12,
+          "tpm": 3,
+          "tpa": 6
+        }
       }
     },
     {
@@ -400,11 +1826,61 @@
       "for": 74,
       "against": 63,
       "players": {
-        "AJ": { "pts": 15, "reb": 0, "ast": 8, "stl": 4, "blk": 0, "fgm": 5, "fga": 10, "tpm": 4, "tpa": 9 },
-        "Gavin": { "pts": 8, "reb": 6, "ast": 1, "stl": 0, "blk": 0, "fgm": 3, "fga": 10, "tpm": 2, "tpa": 3 },
-        "Austin": { "pts": 19, "reb": 2, "ast": 4, "stl": 3, "blk": 0, "fgm": 8, "fga": 16, "tpm": 3, "tpa": 4 },
-        "Kevin": { "pts": 11, "reb": 6, "ast": 7, "stl": 1, "blk": 1, "fgm": 4, "fga": 13, "tpm": 3, "tpa": 7 },
-        "Jake": { "pts": 21, "reb": 17, "ast": 6, "stl": 1, "blk": 1, "fgm": 8, "fga": 11, "tpm": 5, "tpa": 7 }
+        "AJ": {
+          "pts": 15,
+          "reb": 0,
+          "ast": 8,
+          "stl": 4,
+          "blk": 0,
+          "fgm": 5,
+          "fga": 10,
+          "tpm": 4,
+          "tpa": 9
+        },
+        "Gavin": {
+          "pts": 8,
+          "reb": 6,
+          "ast": 1,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 3,
+          "fga": 10,
+          "tpm": 2,
+          "tpa": 3
+        },
+        "Austin": {
+          "pts": 19,
+          "reb": 2,
+          "ast": 4,
+          "stl": 3,
+          "blk": 0,
+          "fgm": 8,
+          "fga": 16,
+          "tpm": 3,
+          "tpa": 4
+        },
+        "Kevin": {
+          "pts": 11,
+          "reb": 6,
+          "ast": 7,
+          "stl": 1,
+          "blk": 1,
+          "fgm": 4,
+          "fga": 13,
+          "tpm": 3,
+          "tpa": 7
+        },
+        "Jake": {
+          "pts": 21,
+          "reb": 17,
+          "ast": 6,
+          "stl": 1,
+          "blk": 1,
+          "fgm": 8,
+          "fga": 11,
+          "tpm": 5,
+          "tpa": 7
+        }
       }
     },
     {
@@ -413,12 +1889,1176 @@
       "for": 88,
       "against": 69,
       "players": {
-        "AJ": { "pts": 17, "reb": 0, "ast": 13, "stl": 6, "blk": 0, "fgm": 7, "fga": 10, "tpm": 3, "tpa": 6 },
-        "Gavin": { "pts": 15, "reb": 1, "ast": 5, "stl": 1, "blk": 2, "fgm": 6, "fga": 9, "tpm": 3, "tpa": 5 },
-        "Austin": { "pts": 23, "reb": 1, "ast": 2, "stl": 1, "blk": 3, "fgm": 10, "fga": 19, "tpm": 1, "tpa": 8 },
-        "Kevin": { "pts": 22, "reb": 8, "ast": 4, "stl": 0, "blk": 1, "fgm": 8, "fga": 12, "tpm": 5, "tpa": 8 },
-        "Jake": { "pts": 11, "reb": 12, "ast": 6, "stl": 2, "blk": 0, "fgm": 4, "fga": 8, "tpm": 3, "tpa": 5 }
+        "AJ": {
+          "pts": 17,
+          "reb": 0,
+          "ast": 13,
+          "stl": 6,
+          "blk": 0,
+          "fgm": 7,
+          "fga": 10,
+          "tpm": 3,
+          "tpa": 6
+        },
+        "Gavin": {
+          "pts": 15,
+          "reb": 1,
+          "ast": 5,
+          "stl": 1,
+          "blk": 2,
+          "fgm": 6,
+          "fga": 9,
+          "tpm": 3,
+          "tpa": 5
+        },
+        "Austin": {
+          "pts": 23,
+          "reb": 1,
+          "ast": 2,
+          "stl": 1,
+          "blk": 3,
+          "fgm": 10,
+          "fga": 19,
+          "tpm": 1,
+          "tpa": 8
+        },
+        "Kevin": {
+          "pts": 22,
+          "reb": 8,
+          "ast": 4,
+          "stl": 0,
+          "blk": 1,
+          "fgm": 8,
+          "fga": 12,
+          "tpm": 5,
+          "tpa": 8
+        },
+        "Jake": {
+          "pts": 11,
+          "reb": 12,
+          "ast": 6,
+          "stl": 2,
+          "blk": 0,
+          "fgm": 4,
+          "fga": 8,
+          "tpm": 3,
+          "tpa": 5
+        }
+      }
+    },
+    {
+      "id": 34,
+      "date": "2026-02-26",
+      "for": 81,
+      "against": 95,
+      "players": {
+        "AJ": {
+          "pts": 10,
+          "reb": 1,
+          "ast": 13,
+          "stl": 2,
+          "blk": 0,
+          "fgm": 4,
+          "fga": 4,
+          "tpm": 1,
+          "tpa": 1
+        },
+        "Gavin": {
+          "pts": 16,
+          "reb": 0,
+          "ast": 5,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 6,
+          "fga": 11,
+          "tpm": 4,
+          "tpa": 9
+        },
+        "AI Player": {
+          "pts": 12,
+          "reb": 1,
+          "ast": 2,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 6,
+          "fga": 9,
+          "tpm": 0,
+          "tpa": 2
+        },
+        "Kevin": {
+          "pts": 23,
+          "reb": 5,
+          "ast": 7,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 9,
+          "fga": 12,
+          "tpm": 3,
+          "tpa": 4
+        },
+        "Jake": {
+          "pts": 20,
+          "reb": 10,
+          "ast": 3,
+          "stl": 1,
+          "blk": 1,
+          "fgm": 8,
+          "fga": 10,
+          "tpm": 4,
+          "tpa": 6
+        }
+      }
+    },
+    {
+      "id": 35,
+      "date": "2026-02-26",
+      "for": 87,
+      "against": 64,
+      "players": {
+        "AJ": {
+          "pts": 15,
+          "reb": 0,
+          "ast": 10,
+          "stl": 3,
+          "blk": 0,
+          "fgm": 6,
+          "fga": 12,
+          "tpm": 1,
+          "tpa": 3
+        },
+        "Gavin": {
+          "pts": 12,
+          "reb": 2,
+          "ast": 5,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 5,
+          "fga": 7,
+          "tpm": 2,
+          "tpa": 3
+        },
+        "Austin": {
+          "pts": 21,
+          "reb": 2,
+          "ast": 2,
+          "stl": 2,
+          "blk": 0,
+          "fgm": 10,
+          "fga": 15,
+          "tpm": 1,
+          "tpa": 1
+        },
+        "Kevin": {
+          "pts": 28,
+          "reb": 1,
+          "ast": 5,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 11,
+          "fga": 15,
+          "tpm": 4,
+          "tpa": 5
+        },
+        "Jake": {
+          "pts": 11,
+          "reb": 16,
+          "ast": 6,
+          "stl": 2,
+          "blk": 0,
+          "fgm": 4,
+          "fga": 5,
+          "tpm": 3,
+          "tpa": 4
+        }
+      }
+    },
+    {
+      "id": 36,
+      "date": "2026-02-26",
+      "for": 70,
+      "against": 55,
+      "players": {
+        "AJ": {
+          "pts": 16,
+          "reb": 0,
+          "ast": 6,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 6,
+          "fga": 13,
+          "tpm": 4,
+          "tpa": 8
+        },
+        "Gavin": {
+          "pts": 13,
+          "reb": 5,
+          "ast": 6,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 5,
+          "fga": 11,
+          "tpm": 3,
+          "tpa": 4
+        },
+        "Austin": {
+          "pts": 11,
+          "reb": 1,
+          "ast": 2,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 5,
+          "fga": 12,
+          "tpm": 1,
+          "tpa": 5
+        },
+        "Kevin": {
+          "pts": 16,
+          "reb": 1,
+          "ast": 3,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 7,
+          "fga": 13,
+          "tpm": 0,
+          "tpa": 1
+        },
+        "Jake": {
+          "pts": 14,
+          "reb": 21,
+          "ast": 8,
+          "stl": 1,
+          "blk": 1,
+          "fgm": 5,
+          "fga": 7,
+          "tpm": 4,
+          "tpa": 6
+        }
+      }
+    },
+    {
+      "id": 37,
+      "date": "2026-02-26",
+      "for": 78,
+      "against": 79,
+      "players": {
+        "AJ": {
+          "pts": 17,
+          "reb": 1,
+          "ast": 12,
+          "stl": 2,
+          "blk": 0,
+          "fgm": 8,
+          "fga": 10,
+          "tpm": 0,
+          "tpa": 1
+        },
+        "Gavin": {
+          "pts": 27,
+          "reb": 4,
+          "ast": 6,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 10,
+          "fga": 13,
+          "tpm": 7,
+          "tpa": 8
+        },
+        "Austin": {
+          "pts": 8,
+          "reb": 2,
+          "ast": 1,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 4,
+          "fga": 8,
+          "tpm": 0,
+          "tpa": 2
+        },
+        "Kevin": {
+          "pts": 5,
+          "reb": 4,
+          "ast": 5,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 2,
+          "fga": 6,
+          "tpm": 0,
+          "tpa": 3
+        },
+        "Jake": {
+          "pts": 21,
+          "reb": 8,
+          "ast": 3,
+          "stl": 2,
+          "blk": 1,
+          "fgm": 8,
+          "fga": 12,
+          "tpm": 5,
+          "tpa": 6
+        }
+      }
+    },
+    {
+      "id": 38,
+      "date": "2026-02-26",
+      "for": 88,
+      "against": 94,
+      "players": {
+        "AJ": {
+          "pts": 0,
+          "reb": 1,
+          "ast": 16,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 0,
+          "fga": 0,
+          "tpm": 0,
+          "tpa": 0
+        },
+        "Greg": {
+          "pts": 28,
+          "reb": 0,
+          "ast": 6,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 12,
+          "fga": 14,
+          "tpm": 4,
+          "tpa": 4
+        },
+        "Gavin": {
+          "pts": 17,
+          "reb": 0,
+          "ast": 3,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 6,
+          "fga": 9,
+          "tpm": 5,
+          "tpa": 7
+        },
+        "Kevin": {
+          "pts": 35,
+          "reb": 1,
+          "ast": 1,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 13,
+          "fga": 17,
+          "tpm": 7,
+          "tpa": 9
+        },
+        "Jake": {
+          "pts": 8,
+          "reb": 13,
+          "ast": 8,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 4,
+          "fga": 9,
+          "tpm": 0,
+          "tpa": 2
+        }
+      }
+    },
+    {
+      "id": 39,
+      "date": "2026-02-26",
+      "for": 49,
+      "against": 47,
+      "players": {
+        "AJ": {
+          "pts": 2,
+          "reb": 1,
+          "ast": 7,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 1,
+          "fga": 1,
+          "tpm": 0,
+          "tpa": 0
+        },
+        "Gavin": {
+          "pts": 16,
+          "reb": 1,
+          "ast": 3,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 6,
+          "fga": 9,
+          "tpm": 4,
+          "tpa": 7
+        },
+        "Greg": {
+          "pts": 16,
+          "reb": 0,
+          "ast": 3,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 7,
+          "fga": 8,
+          "tpm": 2,
+          "tpa": 3
+        },
+        "Kevin": {
+          "pts": 10,
+          "reb": 2,
+          "ast": 2,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 4,
+          "fga": 7,
+          "tpm": 2,
+          "tpa": 2
+        },
+        "Jake": {
+          "pts": 5,
+          "reb": 10,
+          "ast": 5,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 2,
+          "fga": 3,
+          "tpm": 1,
+          "tpa": 2
+        }
+      }
+    },
+    {
+      "id": 40,
+      "date": "2026-02-26",
+      "for": 85,
+      "against": 97,
+      "players": {
+        "AJ": {
+          "pts": 4,
+          "reb": 1,
+          "ast": 11,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 2,
+          "fga": 4,
+          "tpm": 0,
+          "tpa": 2
+        },
+        "Gavin": {
+          "pts": 23,
+          "reb": 1,
+          "ast": 5,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 9,
+          "fga": 14,
+          "tpm": 5,
+          "tpa": 9
+        },
+        "Greg": {
+          "pts": 26,
+          "reb": 0,
+          "ast": 5,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 11,
+          "fga": 12,
+          "tpm": 4,
+          "tpa": 5
+        },
+        "Kevin": {
+          "pts": 24,
+          "reb": 2,
+          "ast": 2,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 10,
+          "fga": 17,
+          "tpm": 3,
+          "tpa": 4
+        },
+        "Jake": {
+          "pts": 8,
+          "reb": 16,
+          "ast": 11,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 3,
+          "fga": 5,
+          "tpm": 2,
+          "tpa": 4
+        }
+      }
+    },
+    {
+      "id": 41,
+      "date": "2026-02-26",
+      "for": 67,
+      "against": 78,
+      "players": {
+        "AI Player": {
+          "pts": 2,
+          "reb": 1,
+          "ast": 5,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 1,
+          "fga": 2,
+          "tpm": 0,
+          "tpa": 0
+        },
+        "Gavin": {
+          "pts": 15,
+          "reb": 1,
+          "ast": 4,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 5,
+          "fga": 14,
+          "tpm": 3,
+          "tpa": 10
+        },
+        "Greg": {
+          "pts": 29,
+          "reb": 0,
+          "ast": 5,
+          "stl": 2,
+          "blk": 0,
+          "fgm": 11,
+          "fga": 17,
+          "tpm": 6,
+          "tpa": 9
+        },
+        "Kevin": {
+          "pts": 13,
+          "reb": 7,
+          "ast": 7,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 5,
+          "fga": 11,
+          "tpm": 3,
+          "tpa": 5
+        },
+        "Jake": {
+          "pts": 8,
+          "reb": 9,
+          "ast": 4,
+          "stl": 1,
+          "blk": 1,
+          "fgm": 3,
+          "fga": 5,
+          "tpm": 2,
+          "tpa": 4
+        }
+      }
+    },
+    {
+      "id": 42,
+      "date": "2026-04-03",
+      "for": 69,
+      "against": 76,
+      "players": {
+        "AJ": {
+          "pts": 9,
+          "reb": 0,
+          "ast": 8,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 3,
+          "fga": 7,
+          "tpm": 3,
+          "tpa": 6
+        },
+        "Gavin": {
+          "pts": 21,
+          "reb": 1,
+          "ast": 4,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 8,
+          "fga": 13,
+          "tpm": 5,
+          "tpa": 7
+        },
+        "Mickey": {
+          "pts": 11,
+          "reb": 3,
+          "ast": 4,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 4,
+          "fga": 5,
+          "tpm": 3,
+          "tpa": 3
+        },
+        "Kevin": {
+          "pts": 20,
+          "reb": 3,
+          "ast": 2,
+          "stl": 0,
+          "blk": 1,
+          "fgm": 9,
+          "fga": 14,
+          "tpm": 2,
+          "tpa": 3
+        },
+        "Jake": {
+          "pts": 8,
+          "reb": 8,
+          "ast": 5,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 3,
+          "fga": 8,
+          "tpm": 2,
+          "tpa": 7
+        }
+      }
+    },
+    {
+      "id": 43,
+      "date": "2026-04-03",
+      "for": 88,
+      "against": 66,
+      "players": {
+        "Gavin": {
+          "pts": 17,
+          "reb": 2,
+          "ast": 9,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 6,
+          "fga": 8,
+          "tpm": 5,
+          "tpa": 7
+        },
+        "Greg": {
+          "pts": 22,
+          "reb": 1,
+          "ast": 5,
+          "stl": 2,
+          "blk": 0,
+          "fgm": 9,
+          "fga": 15,
+          "tpm": 3,
+          "tpa": 4
+        },
+        "Austin": {
+          "pts": 12,
+          "reb": 1,
+          "ast": 5,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 5,
+          "fga": 9,
+          "tpm": 2,
+          "tpa": 4
+        },
+        "Kevin": {
+          "pts": 27,
+          "reb": 2,
+          "ast": 2,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 10,
+          "fga": 13,
+          "tpm": 5,
+          "tpa": 6
+        },
+        "Jake": {
+          "pts": 10,
+          "reb": 12,
+          "ast": 7,
+          "stl": 3,
+          "blk": 1,
+          "fgm": 4,
+          "fga": 5,
+          "tpm": 1,
+          "tpa": 2
+        }
+      }
+    },
+    {
+      "id": 44,
+      "date": "2026-04-03",
+      "for": 110,
+      "against": 64,
+      "players": {
+        "AJ": {
+          "pts": 24,
+          "reb": 2,
+          "ast": 11,
+          "stl": 2,
+          "blk": 0,
+          "fgm": 9,
+          "fga": 12,
+          "tpm": 5,
+          "tpa": 7
+        },
+        "Gavin": {
+          "pts": 15,
+          "reb": 1,
+          "ast": 6,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 5,
+          "fga": 7,
+          "tpm": 5,
+          "tpa": 7
+        },
+        "Mickey": {
+          "pts": 18,
+          "reb": 0,
+          "ast": 10,
+          "stl": 2,
+          "blk": 0,
+          "fgm": 8,
+          "fga": 11,
+          "tpm": 2,
+          "tpa": 4
+        },
+        "Kevin": {
+          "pts": 26,
+          "reb": 1,
+          "ast": 5,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 9,
+          "fga": 12,
+          "tpm": 6,
+          "tpa": 8
+        },
+        "Jake": {
+          "pts": 27,
+          "reb": 20,
+          "ast": 3,
+          "stl": 2,
+          "blk": 0,
+          "fgm": 10,
+          "fga": 10,
+          "tpm": 7,
+          "tpa": 7
+        }
+      }
+    },
+    {
+      "id": 45,
+      "date": "2026-04-03",
+      "for": 87,
+      "against": 58,
+      "players": {
+        "Gavin": {
+          "pts": 24,
+          "reb": 0,
+          "ast": 2,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 9,
+          "fga": 11,
+          "tpm": 6,
+          "tpa": 7
+        },
+        "Mickey": {
+          "pts": 30,
+          "reb": 3,
+          "ast": 2,
+          "stl": 2,
+          "blk": 0,
+          "fgm": 11,
+          "fga": 12,
+          "tpm": 6,
+          "tpa": 7
+        },
+        "Kevin": {
+          "pts": 2,
+          "reb": 2,
+          "ast": 7,
+          "stl": 2,
+          "blk": 0,
+          "fgm": 1,
+          "fga": 7,
+          "tpm": 0,
+          "tpa": 2
+        },
+        "Jake": {
+          "pts": 3,
+          "reb": 17,
+          "ast": 8,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 1,
+          "fga": 2,
+          "tpm": 1,
+          "tpa": 2
+        }
+      }
+    },
+    {
+      "id": 46,
+      "date": "2026-04-03",
+      "for": 65,
+      "against": 89,
+      "players": {
+        "Gavin": {
+          "pts": 14,
+          "reb": 2,
+          "ast": 4,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 5,
+          "fga": 9,
+          "tpm": 4,
+          "tpa": 7
+        },
+        "Greg": {
+          "pts": 15,
+          "reb": 1,
+          "ast": 7,
+          "stl": 2,
+          "blk": 0,
+          "fgm": 5,
+          "fga": 8,
+          "tpm": 2,
+          "tpa": 4
+        },
+        "Austin": {
+          "pts": 14,
+          "reb": 2,
+          "ast": 4,
+          "stl": 2,
+          "blk": 0,
+          "fgm": 6,
+          "fga": 10,
+          "tpm": 2,
+          "tpa": 5
+        },
+        "Kevin": {
+          "pts": 10,
+          "reb": 4,
+          "ast": 4,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 4,
+          "fga": 9,
+          "tpm": 2,
+          "tpa": 3
+        },
+        "Jake": {
+          "pts": 12,
+          "reb": 8,
+          "ast": 4,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 5,
+          "fga": 9,
+          "tpm": 2,
+          "tpa": 5
+        }
+      }
+    },
+    {
+      "id": 47,
+      "date": "2026-04-03",
+      "for": 62,
+      "against": 54,
+      "players": {
+        "AJ": {
+          "pts": 17,
+          "reb": 2,
+          "ast": 8,
+          "stl": 2,
+          "blk": 0,
+          "fgm": 7,
+          "fga": 16,
+          "tpm": 2,
+          "tpa": 9
+        },
+        "Gavin": {
+          "pts": 10,
+          "reb": 1,
+          "ast": 2,
+          "stl": 3,
+          "blk": 0,
+          "fgm": 4,
+          "fga": 10,
+          "tpm": 2,
+          "tpa": 5
+        },
+        "Mickey": {
+          "pts": 16,
+          "reb": 2,
+          "ast": 1,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 5,
+          "fga": 6,
+          "tpm": 4,
+          "tpa": 5
+        },
+        "Kevin": {
+          "pts": 13,
+          "reb": 3,
+          "ast": 2,
+          "stl": 0,
+          "blk": 2,
+          "fgm": 5,
+          "fga": 10,
+          "tpm": 1,
+          "tpa": 4
+        },
+        "Jake": {
+          "pts": 6,
+          "reb": 13,
+          "ast": 4,
+          "stl": 1,
+          "blk": 2,
+          "fgm": 2,
+          "fga": 5,
+          "tpm": 2,
+          "tpa": 5
+        }
+      }
+    },
+    {
+      "id": 48,
+      "date": "2026-04-03",
+      "for": 75,
+      "against": 85,
+      "players": {
+        "Gavin": {
+          "pts": 9,
+          "reb": 2,
+          "ast": 4,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 3,
+          "fga": 7,
+          "tpm": 3,
+          "tpa": 7
+        },
+        "Greg": {
+          "pts": 29,
+          "reb": 1,
+          "ast": 4,
+          "stl": 2,
+          "blk": 0,
+          "fgm": 12,
+          "fga": 16,
+          "tpm": 5,
+          "tpa": 6
+        },
+        "Austin": {
+          "pts": 2,
+          "reb": 0,
+          "ast": 11,
+          "stl": 2,
+          "blk": 0,
+          "fgm": 1,
+          "fga": 4,
+          "tpm": 0,
+          "tpa": 1
+        },
+        "Kevin": {
+          "pts": 21,
+          "reb": 3,
+          "ast": 2,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 9,
+          "fga": 16,
+          "tpm": 3,
+          "tpa": 5
+        },
+        "Jake": {
+          "pts": 14,
+          "reb": 7,
+          "ast": 5,
+          "stl": 0,
+          "blk": 1,
+          "fgm": 6,
+          "fga": 9,
+          "tpm": 2,
+          "tpa": 4
+        }
+      }
+    },
+    {
+      "id": 49,
+      "date": "2026-04-03",
+      "for": 106,
+      "against": 69,
+      "players": {
+        "Gavin": {
+          "pts": 29,
+          "reb": 1,
+          "ast": 3,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 10,
+          "fga": 14,
+          "tpm": 9,
+          "tpa": 12
+        },
+        "Mickey": {
+          "pts": 30,
+          "reb": 3,
+          "ast": 6,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 12,
+          "fga": 13,
+          "tpm": 6,
+          "tpa": 6
+        },
+        "Kevin": {
+          "pts": 9,
+          "reb": 1,
+          "ast": 2,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 4,
+          "fga": 5,
+          "tpm": 0,
+          "tpa": 0
+        },
+        "Jake": {
+          "pts": 9,
+          "reb": 18,
+          "ast": 3,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 3,
+          "fga": 5,
+          "tpm": 2,
+          "tpa": 4
+        }
+      }
+    },
+    {
+      "id": 50,
+      "date": "2026-04-03",
+      "for": 85,
+      "against": 70,
+      "players": {
+        "AJ": {
+          "pts": 11,
+          "reb": 0,
+          "ast": 10,
+          "stl": 0,
+          "blk": 1,
+          "fgm": 4,
+          "fga": 6,
+          "tpm": 3,
+          "tpa": 5
+        },
+        "Gavin": {
+          "pts": 24,
+          "reb": 2,
+          "ast": 4,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 9,
+          "fga": 13,
+          "tpm": 6,
+          "tpa": 9
+        },
+        "Mickey": {
+          "pts": 17,
+          "reb": 5,
+          "ast": 7,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 6,
+          "fga": 8,
+          "tpm": 5,
+          "tpa": 7
+        },
+        "Kevin": {
+          "pts": 11,
+          "reb": 2,
+          "ast": 0,
+          "stl": 0,
+          "blk": 2,
+          "fgm": 4,
+          "fga": 9,
+          "tpm": 2,
+          "tpa": 3
+        },
+        "Jake": {
+          "pts": 22,
+          "reb": 11,
+          "ast": 6,
+          "stl": 1,
+          "blk": 3,
+          "fgm": 8,
+          "fga": 10,
+          "tpm": 6,
+          "tpa": 8
+        }
+      }
+    },
+    {
+      "id": 51,
+      "date": "2026-04-03",
+      "for": 73,
+      "against": 56,
+      "players": {
+        "Gavin": {
+          "pts": 9,
+          "reb": 4,
+          "ast": 6,
+          "stl": 1,
+          "blk": 0,
+          "fgm": 4,
+          "fga": 10,
+          "tpm": 1,
+          "tpa": 5
+        },
+        "Greg": {
+          "pts": 21,
+          "reb": 2,
+          "ast": 6,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 10,
+          "fga": 10,
+          "tpm": 1,
+          "tpa": 1
+        },
+        "Austin": {
+          "pts": 15,
+          "reb": 0,
+          "ast": 5,
+          "stl": 2,
+          "blk": 0,
+          "fgm": 6,
+          "fga": 11,
+          "tpm": 3,
+          "tpa": 5
+        },
+        "Kevin": {
+          "pts": 15,
+          "reb": 3,
+          "ast": 2,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 7,
+          "fga": 10,
+          "tpm": 1,
+          "tpa": 2
+        },
+        "Jake": {
+          "pts": 13,
+          "reb": 11,
+          "ast": 7,
+          "stl": 0,
+          "blk": 0,
+          "fgm": 5,
+          "fga": 7,
+          "tpm": 3,
+          "tpa": 5
+        }
       }
     }
+  ]
+}
   ]
 }
